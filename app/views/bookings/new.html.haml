@@ -1,0 +1,49 @@
+- content_for :subheader do
+  %h2
+    = t('.title')
+  %h3
+    = t('.subtitle')
+
+- content_for :sidebar do
+  %p
+    = link_to(t('.back_html'), event_timeslots_path(institution_id: @institution.id, event_category_id: @event_category.id, event_type_id: @event_type.id, event_date: @timeslot.time.to_date), class: 'back-link')
+
+%dl
+  %dt
+    = t(:event_category_label)
+  %dd
+    = @event_category.name
+  %dt
+    = t(:event_type_label)
+  %dd
+    = @event_type.name
+  %dt
+    = t(:date_label)
+  %dd
+    = l(@timeslot.time, format: :date_only)
+  %dt
+    = t(:time_label)
+  %dd
+    = l(@timeslot.time, format: :time_only)
+
+- if current_patient
+  = simple_form_for @booking_details, url: bookings_url do |f|
+    = f.input :institution_id, as: :hidden
+    = f.input :event_category_id, as: :hidden
+    = f.input :event_type_id, as: :hidden
+    = f.input :starts_at, as: :hidden
+    = f.input :token, as: :hidden
+
+    = f.simple_fields_for :comment_form, wrapper: :comment_form_wrapper do |comment_form|
+      - comment_form.object.attributes.each do |attr_name, _value|
+        = comment_form.input attr_name, comment_form.object.simple_form_field_options(attr_name)
+
+    = f.button :button, class: 'button confirm-booking' do
+      = t('.book')
+
+- else
+  .callout
+    %p
+      = t('.sign_in_prompt_html')
+    = link_to('/samedi/oauth', class: 'button confirm-booking-login') do
+      = t('.sign_in_html')

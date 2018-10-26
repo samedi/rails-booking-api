@@ -2,7 +2,14 @@
   "name": "samedi-rails-api-client",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "3.5"
+    "@rails/webpacker": "3.5",
+    "babel-preset-react": "^6.24.1",
+    "foundation-sites": "^6.5.0-rc.4",
+    "jquery": "^3.3.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "resolve-url-loader": "^2.3.0"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"

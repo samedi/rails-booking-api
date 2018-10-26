@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-11-05&to=2018-11-09
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 29 Oct 2018 09:32:22 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"a0c22ff2c7c2d4fcc76afd2c55634f05"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - b72baf10-cf90-44c3-abb8-3bb85dd43042
+      X-Runtime:
+      - '0.201659'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"time":"2018-11-05T09:05:00+01:00","token":"742391306b9cb69a410b163bf6c25167c536cdde"},{"time":"2018-11-05T10:05:00+01:00","token":"5f3f99ff84cc74aca1910a4695b0673f8d06fdf3"},{"time":"2018-11-05T11:05:00+01:00","token":"5326ca78df532218918c98773814491fffeb05bc"},{"time":"2018-11-05T15:00:00+01:00","token":"c759212c32413c458d881c5a2e64fffc8a73e755"},{"time":"2018-11-05T16:00:00+01:00","token":"1bd53dbc4c240f42a68fc9e9dfdb25d894008e35"},{"time":"2018-11-05T17:00:00+01:00","token":"e3616a44f1431be41fb09a18d9fd3a31ee2e2547"},{"time":"2018-11-06T09:05:00+01:00","token":"b89ed4ffba5a0934c9c116f6949aff712c1a650f"},{"time":"2018-11-06T10:00:00+01:00","token":"415eb0782d348bad1a30e206573301aaa49dc755"},{"time":"2018-11-06T11:00:00+01:00","token":"dc3c1681e1c57eb56e7c75c6223a377b7880d963"},{"time":"2018-11-07T09:00:00+01:00","token":"b04186f4c4c9eba44367d4de2a17834879106bf7"},{"time":"2018-11-07T10:00:00+01:00","token":"d4ba700e3fecb52dc9020f0daba53859b4bd5be5"},{"time":"2018-11-07T11:00:00+01:00","token":"04375805d0a016709ecbe2c98ee20e6ba55e5181"},{"time":"2018-11-08T09:00:00+01:00","token":"3b90ec741040a4fa778e01a849eefd8a783c8a9e"},{"time":"2018-11-08T10:00:00+01:00","token":"b3adcca000d761441ffcc666ff745ed8f0f82caf"},{"time":"2018-11-08T11:00:00+01:00","token":"8f49f482f75331b12091a089efd3cb7d240624d9"},{"time":"2018-11-08T15:00:00+01:00","token":"ea61bb37b857f3aed8c154270174d4d01b397968"},{"time":"2018-11-08T16:00:00+01:00","token":"f63ffb9eed81ca169da5d8608b3ac35cba2ab64d"},{"time":"2018-11-08T17:00:00+01:00","token":"e19d1e550018d3936f08a0d2be49bb447ec3a093"},{"time":"2018-11-09T09:00:00+01:00","token":"2d049ed33cd309b7e6c8167a97a4fdd6669a1a51"},{"time":"2018-11-09T10:00:00+01:00","token":"055e0d9d2f921c8917e1bf5c16f6893b0b3f0b13"},{"time":"2018-11-09T11:00:00+01:00","token":"aa491e39e2fe65f05b2d348036ef3a134e851f8a"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-11-05&to=2018-11-09
+  recorded_at: Fri, 29 Oct 2018 11:32:23 GMT
+recorded_with: VCR 4.0.0

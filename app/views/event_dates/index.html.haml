@@ -1,0 +1,48 @@
+- content_for :subheader do
+  %h2
+    = @institution.name
+  %h3
+    = @event_category.name
+  %h4
+    = @event_type.name
+  %h5
+    = t('.title')
+
+- content_for :sidebar do
+  %p
+    = link_to(t('.back_html'), event_types_path(institution_id: @institution.id, event_category_id: @event_category.id), class: 'back-link')
+
+.calendar
+  - @event_date_calendar.find_month_with_available_days do |month_name, event_dates, weekdays_until_first_day, previous_month, next_month|
+    .grid-x
+      .cell.shrink
+        - if previous_month
+          = link_to(event_dates_path(institution_id: @institution.id, event_category_id: @event_category.id, event_type_id: @event_type.id, month: previous_month), class: 'calendar-month-paging', title: t('.previous_month')) do
+            ←
+        - else
+          .disabled
+            ←
+      .cell.auto
+        %p
+          = month_name
+      .cell.shrink
+        = link_to(event_dates_path(institution_id: @institution.id, event_category_id: @event_category.id, event_type_id: @event_type.id, month: next_month), class: 'calendar-month-paging', title: t('.next_month')) do
+          →
+
+    %ol.calendar-header.grid-x.small-up-7
+      - @event_date_calendar.each_day_of_week do |day_name|
+        %li.cell.calendar-header-item
+          = day_name
+
+    %ol.calendar-body.grid-x.small-up-7
+      - weekdays_until_first_day.times do
+        %li.cell.calendar-empty-item
+
+      - event_dates.each do |event_date|
+        %li.cell.calendar-item
+          - today = event_date.date == Date.today
+          - if event_date.available?
+            = link_to(l(event_date.date, format: :day_only), event_timeslots_path(institution_id: event_date.institution.id, event_category_id: event_date.event_category.id, event_type_id: event_date.event_type.id, event_date: event_date.date), class: ['calendar-item-link', today ? 'today' : nil].compact.join(' '))
+          - else
+            %span.calendar-item-unavailable{class: [event_date.date.on_weekend? && 'weekend', today && 'today'].compact.join(' ')}
+              = l(event_date.date, format: :day_only)

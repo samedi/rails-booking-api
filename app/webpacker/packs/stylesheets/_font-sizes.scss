@@ -1,0 +1,9 @@
+// The font sizes are computed with Type Scale.
+$font-sizes: (
+  small: (h1: 2.441rem, h2: 1.953rem, h3: 1.563rem, h4: 1.250rem, p: 1rem),
+  large: (h1: 3.998rem, h2: 2.827rem, h3: 1.999rem, h4: 1.414rem, p: 1rem)
+);
+
+@function get-font-size($breakpoint, $level) {
+  @return map-get(map-get($font-sizes, $breakpoint), $level);
+}

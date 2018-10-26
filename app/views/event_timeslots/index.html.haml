@@ -1,0 +1,21 @@
+- content_for :subheader do
+  %h2
+    = @institution.name
+  %h3
+    = @event_category.name
+  %h4
+    = @event_type.name
+  %h5
+    = l(@date, format: :date_only)
+  %h6
+    = t('.title')
+
+- content_for :sidebar do
+  %p
+    = link_to(t('.back_html'), event_dates_path(institution_id: @institution.id, event_category_id: @event_category.id, event_type_id: @event_type.id, month: @date.strftime('%Y-%m')), class: 'back-link')
+
+.timeslot-selector
+  %ol.timeslots-list
+    - @timeslots.each do |timeslot|
+      %li.timeslot
+        = link_to(l(timeslot.time, format: :time_only), new_booking_path(timeslot.new_booking_path_args), class: 'timeslot-button')

@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-10-08&to=2018-11-09
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:52 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"a4242c5ae5291e9c0d72eee0dcf58f86"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 50078378-95c9-4922-b79d-df26068495a6
+      X-Runtime:
+      - '0.222832'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"time":"2018-10-26T11:35:00+02:00","token":"e88f1c24d8a8851f3983f71b2620393bf8452802"},{"time":"2018-10-29T09:50:00+01:00","token":"f48b3c71df59a804a28ef5631b3868c53a005270"},{"time":"2018-10-29T10:00:00+01:00","token":"5f1bb3aa978ae9b88cf7ef170c9f552f05365a97"},{"time":"2018-10-29T11:00:00+01:00","token":"06f6d0a9ded48f388d8a63e8002877998c0c5834"},{"time":"2018-10-29T15:00:00+01:00","token":"6685dc16e10e787ebccd4894f71eaa8f0ba2e2ac"},{"time":"2018-10-29T16:00:00+01:00","token":"44e36d1a18eb6e45cf7f4b782d0aea472f4f0c49"},{"time":"2018-10-29T17:00:00+01:00","token":"6e1fca11cdb386c7c0b3601329578b9577eca7ab"},{"time":"2018-10-30T09:20:00+01:00","token":"967dd24c3230a01e8c37da4c46b0d16ecca29f8d"},{"time":"2018-10-30T10:00:00+01:00","token":"d4568d1fc5ac4b385c43298a2f995308fd840872"},{"time":"2018-10-30T11:00:00+01:00","token":"76002e8ebb45928ee98fc66730b6d1720b126991"},{"time":"2018-10-31T09:00:00+01:00","token":"2e97e9847028771eb093ee103f007f6256ffc595"},{"time":"2018-10-31T10:00:00+01:00","token":"d3a899e8292edb911d074095da87828a3dfb6c57"},{"time":"2018-10-31T11:05:00+01:00","token":"f656e1392432973801f496de389fd446cb25275d"},{"time":"2018-11-02T09:05:00+01:00","token":"d23a4861c7727d594d1f6b9519f401b4531569dd"},{"time":"2018-11-02T10:05:00+01:00","token":"52eb627ff9e2ef217f228dacfe47b0ca9b14e82d"},{"time":"2018-11-02T11:05:00+01:00","token":"048f9a6358c1eb43edba30edd77512f17d745ba1"},{"time":"2018-11-05T09:05:00+01:00","token":"742391306b9cb69a410b163bf6c25167c536cdde"},{"time":"2018-11-05T10:05:00+01:00","token":"5f3f99ff84cc74aca1910a4695b0673f8d06fdf3"},{"time":"2018-11-05T11:05:00+01:00","token":"5326ca78df532218918c98773814491fffeb05bc"},{"time":"2018-11-05T15:00:00+01:00","token":"c759212c32413c458d881c5a2e64fffc8a73e755"},{"time":"2018-11-05T16:00:00+01:00","token":"1bd53dbc4c240f42a68fc9e9dfdb25d894008e35"},{"time":"2018-11-05T17:00:00+01:00","token":"e3616a44f1431be41fb09a18d9fd3a31ee2e2547"},{"time":"2018-11-06T09:05:00+01:00","token":"b89ed4ffba5a0934c9c116f6949aff712c1a650f"},{"time":"2018-11-06T10:00:00+01:00","token":"415eb0782d348bad1a30e206573301aaa49dc755"},{"time":"2018-11-06T11:00:00+01:00","token":"dc3c1681e1c57eb56e7c75c6223a377b7880d963"},{"time":"2018-11-07T09:00:00+01:00","token":"b04186f4c4c9eba44367d4de2a17834879106bf7"},{"time":"2018-11-07T10:00:00+01:00","token":"d4ba700e3fecb52dc9020f0daba53859b4bd5be5"},{"time":"2018-11-07T11:00:00+01:00","token":"04375805d0a016709ecbe2c98ee20e6ba55e5181"},{"time":"2018-11-08T09:00:00+01:00","token":"3b90ec741040a4fa778e01a849eefd8a783c8a9e"},{"time":"2018-11-08T10:00:00+01:00","token":"b3adcca000d761441ffcc666ff745ed8f0f82caf"},{"time":"2018-11-08T11:00:00+01:00","token":"8f49f482f75331b12091a089efd3cb7d240624d9"},{"time":"2018-11-08T15:00:00+01:00","token":"ea61bb37b857f3aed8c154270174d4d01b397968"},{"time":"2018-11-08T16:00:00+01:00","token":"f63ffb9eed81ca169da5d8608b3ac35cba2ab64d"},{"time":"2018-11-08T17:00:00+01:00","token":"e19d1e550018d3936f08a0d2be49bb447ec3a093"},{"time":"2018-11-09T09:00:00+01:00","token":"2d049ed33cd309b7e6c8167a97a4fdd6669a1a51"},{"time":"2018-11-09T10:00:00+01:00","token":"055e0d9d2f921c8917e1bf5c16f6893b0b3f0b13"},{"time":"2018-11-09T11:00:00+01:00","token":"aa491e39e2fe65f05b2d348036ef3a134e851f8a"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-10-08&to=2018-11-09
+  recorded_at: Fri, 26 Oct 2018 09:30:52 GMT
+- request:
+    method: post
+    uri: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: event_category_id=50409&event_type_id=156481&starts_at=2018-10-26T11:35:00+02:00&token=e88f1c24d8a8851f3983f71b2620393bf8452802
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Authorization:
+      - Bearer <TEST_ACCESS_TOKEN>
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:53 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"d18b7eee15941634ab4fb276d6820f58"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - f81fd4ee-a987-4316-b839-6c1e821ed6ae
+      X-Runtime:
+      - '0.882948'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"id":39087685,"name":"Sprechstunde","external":true,"referral":false,"creator_type":"Patient::Patient","updater_type":null,"kind":"event","starts_at":"2018-10-26T11:35:00+02:00","attendant_id":"pf3e4160064","structured_comment":[],"xref":null,"attendant_state":null,"ends_at":"2018-10-26T11:55:00+02:00","color":"purple","name_external":"Sprechstunde","event_type_id":156481,"creator_id":"pf3e4160064","updater_id":null,"updated_at":null,"lsn":1540546252823,"base_updated_at":null,"event_category_id":50409,"event_type_xref":null,"attendant_xref":null,"duration":"00:20","practice_name":"Praxis
+        Zweig (DEMO)","practice_id":"00JDFP8A3KYME1FA","creator_name":null,"updater_name":null,"cancelable_until":"2018-10-26T11:35:00+02:00","editable":true,"course_id":null,"video_consultation":false,"course_participants":null}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+  recorded_at: Fri, 26 Oct 2018 09:30:53 GMT
+recorded_with: VCR 4.0.0

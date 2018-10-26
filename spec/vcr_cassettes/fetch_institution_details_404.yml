@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/practices/404_Institution_Not_Found?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:51 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      Cache-Control:
+      - no-cache
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - c9634206-c2fd-4acd-9c62-0a067ac441ed
+      X-Runtime:
+      - '0.054478'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Practice not found"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/practices/404_Institution_Not_Found?client_id=<CLIENT_ID>
+  recorded_at: Fri, 26 Oct 2018 09:30:51 GMT
+recorded_with: VCR 4.0.0

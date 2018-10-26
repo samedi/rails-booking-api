@@ -1,0 +1,314 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/practices/2kqsyve1h4t0dyv5?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:49 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"cf9e44bf468afa4803b5291f65e68e9b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - e20f8499-6500-4a77-adeb-a28ce5beba86
+      X-Runtime:
+      - '0.138181'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"name":"Klinik Morgen (TEST) / - DIES IST EIN TESTKONTO ","required_patient_fields":["first_name","last_name","email","born_on","insurance_company"],"photo_url":"//app.samedi.de/photos/35383?thumbnail=small"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/practices/2kqsyve1h4t0dyv5?client_id=<CLIENT_ID>
+  recorded_at: Fri, 05 Oct 2018 21:49:49 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=2kqsyve1h4t0dyv5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:49 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"a08c0e113b7351bcce2af66f837f4b48"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 80a649ea-1a74-4c61-94e3-a20f5a75f6a3
+      X-Runtime:
+      - '0.143119'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6Mjg4ODksIm5hbWUiOiJaYWhubWVkaXppbiIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfSx7ImlkIjoyODg4OCwibmFtZSI6IkRyLiBtZWQuIE1vcmdlbiwgUGV0ZXIiLCJkZXNjcmlwdGlvbiI6IjxwPjxzdHJvbmc+RmFjaGFyenQ8L3N0cm9uZz4gZsO8ciBaYWhuLSB1bmQgS2llZmVyY2hpcnVyZ2llPC9wPlxuIiwic3VidGl0bGUiOiIiLCJwaG90b191cmwiOiIvL2FwcC5zYW1lZGkuZGUvcGhvdG9zLzM0ODkxP3RodW1ibmFpbD1zbWFsbCJ9LHsiaWQiOjM4MDIwLCJuYW1lIjoiTW9yZ2VuLCBMaXNhIiwiZGVzY3JpcHRpb24iOiI8cD5QcmF4aXNtYW5hZ2VyaW4gaW4gVGVpbHplaXQgc293aWUgUHJvcGh5bGF4ZS1TY2h3ZXN0ZXI8L3A+XG4iLCJzdWJ0aXRsZSI6IiIsInBob3RvX3VybCI6Ii8vYXBwLnNhbWVkaS5kZS9waG90b3MvMzY0Mjc/dGh1bWJuYWlsPXNtYWxsIn0seyJpZCI6Mzk3NjIsIm5hbWUiOiJBcnp0IGVnYWwiLCJkZXNjcmlwdGlvbiI6bnVsbCwic3VidGl0bGUiOm51bGwsInBob3RvX3VybCI6bnVsbH0seyJpZCI6MzkzOTcsIm5hbWUiOiJQUklWQVRFIiwiZGVzY3JpcHRpb24iOm51bGwsInN1YnRpdGxlIjpudWxsLCJwaG90b191cmwiOm51bGx9LHsiaWQiOjM5Mzk4LCJuYW1lIjoiUFVCTElDIiwiZGVzY3JpcHRpb24iOm51bGwsInN1YnRpdGxlIjpudWxsLCJwaG90b191cmwiOm51bGx9LHsiaWQiOjI5MDQxLCJuYW1lIjoiS2llZmVyY2hpcnVyZ2llIiwiZGVzY3JpcHRpb24iOm51bGwsInN1YnRpdGxlIjpudWxsLCJwaG90b191cmwiOm51bGx9LHsiaWQiOjMyNTQ2LCJuYW1lIjoiVEVTVCIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfV0sInNjb3BlIjoibGltaXRlZCJ9
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=2kqsyve1h4t0dyv5
+  recorded_at: Fri, 05 Oct 2018 21:49:49 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=28889
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:50 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"7f710bec30fad2e23194c702e709ffb3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 637a1df2-d90e-4037-97a3-087680bd7eb7
+      X-Runtime:
+      - '0.121396'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6MTI2MzI3LCJuYW1lIjoiMDEgQW1hbGdhbWVudGZlcm51bmciLCJjb21tZW50X2Zvcm0iOm51bGwsImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjpmYWxzZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSB6dXIgVGVybWludmVyZWluYmFydW5nIGbDvHIgZWluZSA8c3Ryb25nPkFtYWxnYW1lbnRmZXJudW5nPC9zdHJvbmc+IGRpZXNlIFRlcm1pbmFydC48YnI+XG4gU2llaGU6IDxhIGhyZWY9XCJodHRwOi8vc2FtZWRpLmRlXCI+aGllcjwvYT48L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6ODk4NzMsIm5hbWUiOiIwOCBGdW5rdGlvbnNhbmFseXNlIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSB6dXIgVGVybWludmVyZWluYmFydW5nIGbDvHIgZWluZSA8c3Ryb25nPkZ1bmt0aW9uc2FuYWx5c2U8L3N0cm9uZz4gZGllc2UgVGVybWluYXJ0LjwvcD5cblxuPHVsPlxuPGxpPmtvbXBldGVudDwvbGk+XG48bGk+ZnJldW5kbGljaDwvbGk+XG48bGk+enV2b3Jrb21tZW5kPC9saT5cbjwvdWw+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6ODk4NzAsIm5hbWUiOiIxMiBLb25zZXJ2aWVyZW5kZSBCZWhhbmRsdW5nIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiIiLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6ODk4NzIsIm5hbWUiOiJBbWFsZ2FtZW50ZmVybnVuZyIsImNvbW1lbnRfZm9ybSI6W3sibmFtZSI6InZybMOkdWZpZ2VzIEVudGJpbmR1bmdzZGF0dW0iLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImRhdGUiLCJjb25maWciOm51bGx9XSwiYXR0ZW5kYW50X3VzZXJfcmVxdWlyZWQiOmZhbHNlLCJkZXNjcmlwdGlvbiI6IjxwPkJpdHRlIHfDpGhsZW4gU2llIHp1ciA8c3Ryb25nPlRlcm1pbnZlcmVpbmJhcnVuZzwvc3Ryb25nPiBmw7xyIGVpbmUgQW1hbGdhbWVudGZlcm51bmcgZGllc2UgPGVtPlRlcm1pbmFydDwvZW0+LjwvcD5cblxuPHVsPlxuPGxpPnNjaG5lbGxlICsga29tZm9ydGFibGUgQnVjaHVuZzwvbGk+XG48bGk+enVmcmllZGVuZSBQYXRpZW50ZW48L2xpPlxuPGxpPmJlc3RlcyBTZXJ2aWNlYW5nZWJvdDwvbGk+XG48L3VsPlxuIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjEyNjMyNiwibmFtZSI6IkFtYWxnYW1lbnRmZXJudW5nIC0gendpc2NoZW4gMiB1bmQgNCw1IE1vbm5hdGUgIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6ZmFsc2UsImRlc2NyaXB0aW9uIjoiPHA+Qml0dGUgd8OkaGxlbiBTaWUgenVyIFRlcm1pbnZlcmVpbmJhcnVuZyBmw7xyIGVpbmUgQW1hbGdhbWVudGZlcm51bmcgZGllc2UgVGVybWluYXJ0LjwvcD5cbiIsImlzX3ZpZGVvX2NvbnN1bHRhdGlvbiI6ZmFsc2UsInBhdGllbnRfY2FuX2Jvb2tfd2l0aG91dF9hY2NvdW50Ijp0cnVlfSx7ImlkIjo4OTg2OSwibmFtZSI6IkJsZWFjaGluZyIsImNvbW1lbnRfZm9ybSI6W3sibmFtZSI6Ik5ldXBhdGllbnQiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImNvbWJvIiwiY29uZmlnIjp7InZhbHVlcyI6IkpBXG5ORUlOXG5XQVIgMXggaW4gZGVyIFZlcmdhbmdlbmhlaXRcblRFU1RFU1RFVFNURVRTVEVUU1RFVFNURVRTVEVUU1RFVFMgVEVUVFNURVRTVEVURVNURVRTRVRTVEVTVFxudXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dSB1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1IiwibXVsdGkiOiJvbiIsImVtcHR5VGV4dCI6IlfDpGhsZW4gU2llIG1laHJlcmUgS3JpdGVyaWVuIGF1cyAifX0seyJuYW1lIjoiVm9yZXJrcmFua3VuZ2VuIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJ0ZXh0ZmllbGQiLCJjb25maWciOm51bGx9LHsibmFtZSI6IkRpYWJldGVzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY2hlY2tib3giLCJjb25maWciOm51bGx9LHsibmFtZSI6IklDRDEwLURpYWdub3NlIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiaWNkMTAiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiV8OkaGxlbiBTaWUgZWluZSBEaWFnbm9zZSJ9fSx7Im5hbWUiOiJPUFMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJvcHMiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiT1BTLVNjaGzDvHNzZWwgZWludHJhZ2VuIn19LHsibmFtZSI6IkRhdWVyIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoidGltZSIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiTkVVIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY29tYm8iLCJjb25maWciOnsidmFsdWVzIjoiRGFzIEtvbnplcHQgdm9uIEdVSXMgaW0gaGV1dGlnZW4gU2lubmUgc3RhbW10IGF1cyBkZW4gMTk3MGVyIEphaHJlbi4gU2VpdCAxOTczIGVyYXJiZWl0ZXRlIG1hbiBhbSBYZXJveCBQQVJDIGluIEthbGlmb3JuaWVuIGRlbiBYZXJveCBBbHRvLiBEZW4gZXJzdGVuIGtvbW1lcnppZWxsZW4gRWluc2F0eiB6ZWlndGUgMTk4MSIsImVtcHR5VGV4dCI6IiJ9fV0sImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjpmYWxzZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSB6dXIgVGVybWludmVyZWluYmFydW5nIGbDvHIgZWluIEJsZWFjaGluZyBkaWVzZSBUZXJtaW5hcnQuPC9wPlxuIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjE2NzY1OSwibmFtZSI6IkJsZWFjaGluZyBadXdlaXNlciBleGtsdXNpdiIsImNvbW1lbnRfZm9ybSI6W3sibmFtZSI6Ik5ldXBhdGllbnQiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImNvbWJvIiwiY29uZmlnIjp7InZhbHVlcyI6IkpBXG5ORUlOXG5XQVIgMXggaW4gZGVyIFZlcmdhbmdlbmhlaXRcblRFU1RFU1RFVFNURVRTVEVUU1RFVFNURVRTVEVUU1RFVFMgVEVUVFNURVRTVEVURVNURVRTRVRTVEVTVFxudXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dSB1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1IiwibXVsdGkiOiJvbiIsImVtcHR5VGV4dCI6IlfDpGhsZW4gU2llIG1laHJlcmUgS3JpdGVyaWVuIGF1cyAifX0seyJuYW1lIjoiVm9yZXJrcmFua3VuZ2VuIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJ0ZXh0ZmllbGQiLCJjb25maWciOm51bGx9LHsibmFtZSI6IkRpYWJldGVzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY2hlY2tib3giLCJjb25maWciOm51bGx9LHsibmFtZSI6IklDRDEwLURpYWdub3NlIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiaWNkMTAiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiV8OkaGxlbiBTaWUgZWluZSBEaWFnbm9zZSJ9fSx7Im5hbWUiOiJPUFMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJvcHMiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiT1BTLVNjaGzDvHNzZWwgZWludHJhZ2VuIn19LHsibmFtZSI6IkRhdWVyIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoidGltZSIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiTkVVIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY29tYm8iLCJjb25maWciOnsidmFsdWVzIjoiRGFzIEtvbnplcHQgdm9uIEdVSXMgaW0gaGV1dGlnZW4gU2lubmUgc3RhbW10IGF1cyBkZW4gMTk3MGVyIEphaHJlbi4gU2VpdCAxOTczIGVyYXJiZWl0ZXRlIG1hbiBhbSBYZXJveCBQQVJDIGluIEthbGlmb3JuaWVuIGRlbiBYZXJveCBBbHRvLiBEZW4gZXJzdGVuIGtvbW1lcnppZWxsZW4gRWluc2F0eiB6ZWlndGUgMTk4MSIsImVtcHR5VGV4dCI6IiJ9fV0sImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjpmYWxzZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSB6dXIgVGVybWludmVyZWluYmFydW5nIGbDvHIgZWluIEJsZWFjaGluZyBkaWVzZSBUZXJtaW5hcnQuPC9wPlxuIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjg5ODcxLCJuYW1lIjoiUHJvcGh5bGF4ZSIsImNvbW1lbnRfZm9ybSI6W3sibmFtZSI6Ik5ldXBhdGllbnQiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImNvbWJvIiwiY29uZmlnIjp7InZhbHVlcyI6IkpBXG5ORUlOXG5XQVIgMXggaW4gZGVyIFZlcmdhbmdlbmhlaXRcblRFU1RFU1RFVFNURVRTVEVUU1RFVFNURVRTVEVUU1RFVFMgVEVUVFNURVRTVEVURVNURVRTRVRTVEVTVFxudXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dSB1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1IiwibXVsdGkiOiJvbiIsImVtcHR5VGV4dCI6IlfDpGhsZW4gU2llIG1laHJlcmUgS3JpdGVyaWVuIGF1cyAifX0seyJuYW1lIjoiVm9yZXJrcmFua3VuZ2VuIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJ0ZXh0ZmllbGQiLCJjb25maWciOm51bGx9LHsibmFtZSI6IkRpYWJldGVzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY2hlY2tib3giLCJjb25maWciOm51bGx9LHsibmFtZSI6IklDRDEwLURpYWdub3NlIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiaWNkMTAiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiV8OkaGxlbiBTaWUgZWluZSBEaWFnbm9zZSJ9fSx7Im5hbWUiOiJPUFMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJvcHMiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiT1BTLVNjaGzDvHNzZWwgZWludHJhZ2VuIn19LHsibmFtZSI6IkRhdWVyIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoidGltZSIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiTkVVIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY29tYm8iLCJjb25maWciOnsidmFsdWVzIjoiRGFzIEtvbnplcHQgdm9uIEdVSXMgaW0gaGV1dGlnZW4gU2lubmUgc3RhbW10IGF1cyBkZW4gMTk3MGVyIEphaHJlbi4gU2VpdCAxOTczIGVyYXJiZWl0ZXRlIG1hbiBhbSBYZXJveCBQQVJDIGluIEthbGlmb3JuaWVuIGRlbiBYZXJveCBBbHRvLiBEZW4gZXJzdGVuIGtvbW1lcnppZWxsZW4gRWluc2F0eiB6ZWlndGUgMTk4MSIsImVtcHR5VGV4dCI6IiJ9fV0sImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjpmYWxzZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSB6dXIgVGVybWludmVyZWluYmFydW5nIGbDvHIgZWluZSBQcm9waHlsYXhlIGRpZXNlIFRlcm1pbmFydC48L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6MTI2OTM1LCJuYW1lIjoiUHJvcGh5bGF4ZSAyIiwiY29tbWVudF9mb3JtIjpbeyJuYW1lIjoiTmV1cGF0aWVudCIsInJlcXVpcmVkIjp0cnVlLCJ0eXBlIjoiY29tYm8iLCJjb25maWciOnsidmFsdWVzIjoiSkFcbk5FSU5cbldBUiAxeCBpbiBkZXIgVmVyZ2FuZ2VuaGVpdFxuVEVTVEVTVEVUU1RFVFNURVRTVEVUU1RFVFNURVRTVEVUUyBURVRUU1RFVFNURVRFU1RFVFNFVFNURVNUXG51dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1IHV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXUiLCJtdWx0aSI6Im9uIiwiZW1wdHlUZXh0IjoiV8OkaGxlbiBTaWUgbWVocmVyZSBLcml0ZXJpZW4gYXVzICJ9fSx7Im5hbWUiOiJWb3JlcmtyYW5rdW5nZW4iLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6InRleHRmaWVsZCIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiRGlhYmV0ZXMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJjaGVja2JveCIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiSUNEMTAtRGlhZ25vc2UiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJpY2QxMCIsImNvbmZpZyI6eyJlbXB0eVRleHQiOiJXw6RobGVuIFNpZSBlaW5lIERpYWdub3NlIn19LHsibmFtZSI6Ik9QUyIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Im9wcyIsImNvbmZpZyI6eyJlbXB0eVRleHQiOiJPUFMtU2NobMO8c3NlbCBlaW50cmFnZW4ifX0seyJuYW1lIjoiRGF1ZXIiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJ0aW1lIiwiY29uZmlnIjpudWxsfSx7Im5hbWUiOiJORVUiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJjb21ibyIsImNvbmZpZyI6eyJ2YWx1ZXMiOiJEYXMgS29uemVwdCB2b24gR1VJcyBpbSBoZXV0aWdlbiBTaW5uZSBzdGFtbXQgYXVzIGRlbiAxOTcwZXIgSmFocmVuLiBTZWl0IDE5NzMgZXJhcmJlaXRldGUgbWFuIGFtIFhlcm94IFBBUkMgaW4gS2FsaWZvcm5pZW4gZGVuIFhlcm94IEFsdG8uIERlbiBlcnN0ZW4ga29tbWVyemllbGxlbiBFaW5zYXR6IHplaWd0ZSAxOTgxIiwiZW1wdHlUZXh0IjoiIn19XSwiYXR0ZW5kYW50X3VzZXJfcmVxdWlyZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiPHA+Qml0dGUgd8OkaGxlbiBTaWUgenVyIFRlcm1pbnZlcmVpbmJhcnVuZyBmw7xyIGVpbmUgUHJvcGh5bGF4ZSBkaWVzZSBUZXJtaW5hcnQuPC9wPlxuIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjEyNjkzNywibmFtZSI6IlByb3BoeWxheGUgMiIsImNvbW1lbnRfZm9ybSI6W3sibmFtZSI6Ik5ldXBhdGllbnQiLCJyZXF1aXJlZCI6dHJ1ZSwidHlwZSI6ImNvbWJvIiwiY29uZmlnIjp7InZhbHVlcyI6IkpBXG5ORUlOXG5XQVIgMXggaW4gZGVyIFZlcmdhbmdlbmhlaXRcblRFU1RFU1RFVFNURVRTVEVUU1RFVFNURVRTVEVUU1RFVFMgVEVUVFNURVRTVEVURVNURVRTRVRTVEVTVFxudXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dSB1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1dXV1IiwibXVsdGkiOiJvbiIsImVtcHR5VGV4dCI6IlfDpGhsZW4gU2llIG1laHJlcmUgS3JpdGVyaWVuIGF1cyAifX0seyJuYW1lIjoiVm9yZXJrcmFua3VuZ2VuIiwicmVxdWlyZWQiOnRydWUsInR5cGUiOiJ0ZXh0ZmllbGQiLCJjb25maWciOm51bGx9LHsibmFtZSI6IkRpYWJldGVzIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY2hlY2tib3giLCJjb25maWciOm51bGx9LHsibmFtZSI6IklDRDEwLURpYWdub3NlIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiaWNkMTAiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiV8OkaGxlbiBTaWUgZWluZSBEaWFnbm9zZSJ9fSx7Im5hbWUiOiJPUFMiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJvcHMiLCJjb25maWciOnsiZW1wdHlUZXh0IjoiT1BTLVNjaGzDvHNzZWwgZWludHJhZ2VuIn19LHsibmFtZSI6IkRhdWVyIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoidGltZSIsImNvbmZpZyI6bnVsbH0seyJuYW1lIjoiTkVVIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoiY29tYm8iLCJjb25maWciOnsidmFsdWVzIjoiRGFzIEtvbnplcHQgdm9uIEdVSXMgaW0gaGV1dGlnZW4gU2lubmUgc3RhbW10IGF1cyBkZW4gMTk3MGVyIEphaHJlbi4gU2VpdCAxOTczIGVyYXJiZWl0ZXRlIG1hbiBhbSBYZXJveCBQQVJDIGluIEthbGlmb3JuaWVuIGRlbiBYZXJveCBBbHRvLiBEZW4gZXJzdGVuIGtvbW1lcnppZWxsZW4gRWluc2F0eiB6ZWlndGUgMTk4MSIsImVtcHR5VGV4dCI6IiJ9fV0sImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjp0cnVlLCJkZXNjcmlwdGlvbiI6IjxwPkJpdHRlIHfDpGhsZW4gU2llIHp1ciBUZXJtaW52ZXJlaW5iYXJ1bmcgZsO8ciBlaW5lIFByb3BoeWxheGUgZGllc2UgVGVybWluYXJ0LjwvcD5cbiIsImlzX3ZpZGVvX2NvbnN1bHRhdGlvbiI6ZmFsc2UsInBhdGllbnRfY2FuX2Jvb2tfd2l0aG91dF9hY2NvdW50Ijp0cnVlfSx7ImlkIjoxMjQ2NzAsIm5hbWUiOiJTcHJlY2hzdHVuZGUgUFJJVkFUIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiI8cD5CaXR0ZSB3w6RobGVuIFNpZSBkaWVzZSBUZXJtaW5hcnQsIHdlbm4gU2llIGVpbmVuIFRlcm1pbiBmw7xyIGRpZSBTcHJlY2hzdHVuZGUgdmVyZWluYmFyZW4gbcO2Y2h0ZW4uPC9wPlxuIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjg5ODc0LCJuYW1lIjoiWmFobiBhYiAxOCIsImNvbW1lbnRfZm9ybSI6bnVsbCwiYXR0ZW5kYW50X3VzZXJfcmVxdWlyZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiPHA+Qml0dGUgd8OkaGxlbiBTaWUgenVyIFRlcm1pbnZlcmVpbmJhcnVuZyBmw7xyIGVpbmUgWmFobmZsZWlzY2hiZWhhbmRsdW5nIGRpZXNlIFRlcm1pbmFydC48L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6MTI2MzI1LCJuYW1lIjoiWldFSSBURVNUIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6ZmFsc2UsImRlc2NyaXB0aW9uIjoiPHA+Qml0dGUgd8OkaGxlbiBTaWUgenVyIFRlcm1pbnZlcmVpbmJhcnVuZyBmw7xyIGVpbmUgQW1hbGdhbWVudGZlcm51bmcgZGllc2UgVGVybWluYXJ0LjwvcD5cbiIsImlzX3ZpZGVvX2NvbnN1bHRhdGlvbiI6ZmFsc2UsInBhdGllbnRfY2FuX2Jvb2tfd2l0aG91dF9hY2NvdW50Ijp0cnVlfV0sInNjb3BlIjoibGltaXRlZCIsImV2ZW50X2NhdGVnb3J5X2lkIjoiMjg4ODkiLCJ0YWdnZWQiOm51bGx9
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=28889
+  recorded_at: Fri, 05 Oct 2018 21:49:50 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=28889&event_type_id=89871&from=2018-10-05&to=2019-03-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:52 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"0041b9c4f5ef56d3f966563cc7377a56"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 2f7a68ef-1a4d-454b-aaad-514caa42c31b
+      X-Runtime:
+      - '1.165126'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"date":"2018-10-01","available":false},{"date":"2018-10-02","available":false},{"date":"2018-10-03","available":false},{"date":"2018-10-04","available":false},{"date":"2018-10-05","available":false},{"date":"2018-10-06","available":false},{"date":"2018-10-07","available":false},{"date":"2018-10-08","available":true},{"date":"2018-10-09","available":true},{"date":"2018-10-10","available":true},{"date":"2018-10-11","available":true},{"date":"2018-10-12","available":true},{"date":"2018-10-13","available":false},{"date":"2018-10-14","available":false},{"date":"2018-10-15","available":true},{"date":"2018-10-16","available":true},{"date":"2018-10-17","available":true},{"date":"2018-10-18","available":true},{"date":"2018-10-19","available":true},{"date":"2018-10-20","available":false},{"date":"2018-10-21","available":false},{"date":"2018-10-22","available":true},{"date":"2018-10-23","available":true},{"date":"2018-10-24","available":true},{"date":"2018-10-25","available":true},{"date":"2018-10-26","available":true},{"date":"2018-10-27","available":false},{"date":"2018-10-28","available":false},{"date":"2018-10-29","available":true},{"date":"2018-10-30","available":true},{"date":"2018-10-31","available":true},{"date":"2018-11-01","available":true},{"date":"2018-11-02","available":true},{"date":"2018-11-03","available":false},{"date":"2018-11-04","available":false},{"date":"2018-11-05","available":true},{"date":"2018-11-06","available":true},{"date":"2018-11-07","available":true},{"date":"2018-11-08","available":true},{"date":"2018-11-09","available":true},{"date":"2018-11-10","available":false},{"date":"2018-11-11","available":false},{"date":"2018-11-12","available":true},{"date":"2018-11-13","available":true},{"date":"2018-11-14","available":true},{"date":"2018-11-15","available":true},{"date":"2018-11-16","available":true},{"date":"2018-11-17","available":false},{"date":"2018-11-18","available":false},{"date":"2018-11-19","available":true},{"date":"2018-11-20","available":true},{"date":"2018-11-21","available":true},{"date":"2018-11-22","available":true},{"date":"2018-11-23","available":true},{"date":"2018-11-24","available":false},{"date":"2018-11-25","available":false},{"date":"2018-11-26","available":true},{"date":"2018-11-27","available":true},{"date":"2018-11-28","available":true},{"date":"2018-11-29","available":true},{"date":"2018-11-30","available":true},{"date":"2018-12-01","available":false},{"date":"2018-12-02","available":false},{"date":"2018-12-03","available":true},{"date":"2018-12-04","available":true},{"date":"2018-12-05","available":true},{"date":"2018-12-06","available":true},{"date":"2018-12-07","available":true},{"date":"2018-12-08","available":false},{"date":"2018-12-09","available":false},{"date":"2018-12-10","available":true},{"date":"2018-12-11","available":true},{"date":"2018-12-12","available":true},{"date":"2018-12-13","available":true},{"date":"2018-12-14","available":true},{"date":"2018-12-15","available":false},{"date":"2018-12-16","available":false},{"date":"2018-12-17","available":true},{"date":"2018-12-18","available":true},{"date":"2018-12-19","available":true},{"date":"2018-12-20","available":true},{"date":"2018-12-21","available":true},{"date":"2018-12-22","available":false},{"date":"2018-12-23","available":false},{"date":"2018-12-24","available":true},{"date":"2018-12-25","available":false},{"date":"2018-12-26","available":false},{"date":"2018-12-27","available":true},{"date":"2018-12-28","available":true},{"date":"2018-12-29","available":false},{"date":"2018-12-30","available":false},{"date":"2018-12-31","available":true},{"date":"2019-01-01","available":true},{"date":"2019-01-02","available":true},{"date":"2019-01-03","available":true},{"date":"2019-01-04","available":true},{"date":"2019-01-05","available":false},{"date":"2019-01-06","available":false},{"date":"2019-01-07","available":true},{"date":"2019-01-08","available":true},{"date":"2019-01-09","available":true},{"date":"2019-01-10","available":true},{"date":"2019-01-11","available":true},{"date":"2019-01-12","available":false},{"date":"2019-01-13","available":false},{"date":"2019-01-14","available":false},{"date":"2019-01-15","available":false},{"date":"2019-01-16","available":false},{"date":"2019-01-17","available":false},{"date":"2019-01-18","available":false},{"date":"2019-01-19","available":false},{"date":"2019-01-20","available":false},{"date":"2019-01-21","available":false},{"date":"2019-01-22","available":false},{"date":"2019-01-23","available":false},{"date":"2019-01-24","available":false},{"date":"2019-01-25","available":false},{"date":"2019-01-26","available":false},{"date":"2019-01-27","available":false},{"date":"2019-01-28","available":false},{"date":"2019-01-29","available":false},{"date":"2019-01-30","available":false},{"date":"2019-01-31","available":false},{"date":"2019-02-01","available":false},{"date":"2019-02-02","available":false},{"date":"2019-02-03","available":false},{"date":"2019-02-04","available":false},{"date":"2019-02-05","available":false},{"date":"2019-02-06","available":false},{"date":"2019-02-07","available":false},{"date":"2019-02-08","available":false},{"date":"2019-02-09","available":false},{"date":"2019-02-10","available":false},{"date":"2019-02-11","available":false},{"date":"2019-02-12","available":false},{"date":"2019-02-13","available":false},{"date":"2019-02-14","available":false},{"date":"2019-02-15","available":false},{"date":"2019-02-16","available":false},{"date":"2019-02-17","available":false},{"date":"2019-02-18","available":false},{"date":"2019-02-19","available":false},{"date":"2019-02-20","available":false},{"date":"2019-02-21","available":false},{"date":"2019-02-22","available":false},{"date":"2019-02-23","available":false},{"date":"2019-02-24","available":false},{"date":"2019-02-25","available":false},{"date":"2019-02-26","available":false},{"date":"2019-02-27","available":false},{"date":"2019-02-28","available":false},{"date":"2019-03-01","available":false},{"date":"2019-03-02","available":false},{"date":"2019-03-03","available":false},{"date":"2019-03-04","available":false},{"date":"2019-03-05","available":false},{"date":"2019-03-06","available":false},{"date":"2019-03-07","available":false},{"date":"2019-03-08","available":false},{"date":"2019-03-09","available":false},{"date":"2019-03-10","available":false},{"date":"2019-03-11","available":false},{"date":"2019-03-12","available":false},{"date":"2019-03-13","available":false},{"date":"2019-03-14","available":false},{"date":"2019-03-15","available":false},{"date":"2019-03-16","available":false},{"date":"2019-03-17","available":false},{"date":"2019-03-18","available":false},{"date":"2019-03-19","available":false},{"date":"2019-03-20","available":false},{"date":"2019-03-21","available":false},{"date":"2019-03-22","available":false},{"date":"2019-03-23","available":false},{"date":"2019-03-24","available":false},{"date":"2019-03-25","available":false},{"date":"2019-03-26","available":false},{"date":"2019-03-27","available":false},{"date":"2019-03-28","available":false},{"date":"2019-03-29","available":false},{"date":"2019-03-30","available":false},{"date":"2019-03-31","available":false},{"date":"2019-04-01","available":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=28889&event_type_id=89871&from=2018-10-05&to=2019-03-01
+  recorded_at: Fri, 05 Oct 2018 21:49:52 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&date=2018-10-08&event_category_id=28889&event_type_id=89871
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:52 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"15409ae4dbe8fe520b6e59e96786182e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - '08810335-d2df-467e-ad94-e0915167e897'
+      X-Runtime:
+      - '0.403873'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"time":"2018-10-08T12:00:00+02:00","token":"aed8be35a468feedabbb216fc7d9c61888a539f9"},{"time":"2018-10-08T12:30:00+02:00","token":"82a2f278712f7e6abe2a98722327f48560194e15"},{"time":"2018-10-08T13:00:00+02:00","token":"674b57cbb0bca54b7fcc7c86d963f6d773354c31"},{"time":"2018-10-08T13:30:00+02:00","token":"63f35d4944ba6e70b4dcca6390b04c992b752c12"},{"time":"2018-10-08T14:00:00+02:00","token":"916d70acde8bb52d6d5324168f741e5a2bc12bd2"},{"time":"2018-10-08T14:30:00+02:00","token":"54aac41e91fe306ee5c321fe3cf7e2906d2b35a0"},{"time":"2018-10-08T15:00:00+02:00","token":"8f51f00d7303ef9f41864869e6d6657549f1624e"},{"time":"2018-10-08T15:30:00+02:00","token":"d147259c03fa163f81f699823ede9eade24d6eaf"},{"time":"2018-10-08T16:00:00+02:00","token":"3d1bcdca27d419dfaa224a5fb246710640f53fca"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&date=2018-10-08&event_category_id=28889&event_type_id=89871
+  recorded_at: Fri, 05 Oct 2018 21:49:52 GMT
+- request:
+    method: post
+    uri: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: event_category_id=28889&event_type_id=89871&starts_at=2018-10-08T10:00:00Z&token=aed8be35a468feedabbb216fc7d9c61888a539f9&structured_comment[Neupatient]=JA&structured_comment[Vorerkrankungen]=Keine&structured_comment[Diabetes]=&structured_comment[ICD10-Diagnose]=&structured_comment[OPS]=&structured_comment[Dauer]=&structured_comment[NEU]=
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Authorization:
+      - Bearer <TEST_ACCESS_TOKEN>
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 05 Oct 2018 21:49:54 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"5b401f3ace5a3c944b434183622dfa54"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - abc08e59-b59e-4d5b-a9fc-46e945543d94
+      X-Runtime:
+      - '0.809495'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"id":38355170,"name":"Prophylaxe","external":true,"referral":false,"creator_type":"Patient::Patient","updater_type":null,"kind":"event","starts_at":"2018-10-08T12:00:00+02:00","attendant_id":"pae09a35bf1","structured_comment":[["Neupatient","JA"],["Vorerkrankungen","Keine"],["Diabetes",""],["ICD10-Diagnose",""],["OPS",""],["Dauer",""],["NEU",""]],"xref":null,"attendant_state":null,"ends_at":"2018-10-08T13:00:00+02:00","color":"orange","name_external":"Prophylaxe","event_type_id":89871,"creator_id":"pae09a35bf1","updater_id":null,"updated_at":null,"lsn":1538776194528,"base_updated_at":null,"event_category_id":28889,"event_type_xref":"si_030fdf6d7f","attendant_xref":null,"duration":"01:05","practice_name":"Klinik
+        Morgen (TEST) / - DIES IST EIN TESTKONTO ","practice_id":"2kqsyve1h4t0dyv5","creator_name":null,"updater_name":null,"cancelable_until":"2018-10-08T12:00:00+02:00","editable":true,"course_id":null,"video_consultation":false,"course_participants":null}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+  recorded_at: Fri, 05 Oct 2018 21:49:54 GMT
+recorded_with: VCR 4.0.0

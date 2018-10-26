@@ -1,0 +1,365 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/practices/00JDFP8A3KYME1FA?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:38 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"819a3ab0b455055831ab7925065f6ef3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - dbc6fab4-d737-4428-b5e5-9fabae3c5f53
+      X-Runtime:
+      - '0.059260'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"name":"Praxis Zweig (DEMO)","required_patient_fields":["first_name","last_name","email","born_on"],"photo_url":"//app.samedi.de/photos/813?thumbnail=small"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/practices/00JDFP8A3KYME1FA?client_id=<CLIENT_ID>
+  recorded_at: Fri, 26 Oct 2018 09:30:38 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=00JDFP8A3KYME1FA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:38 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"354b9e7a3d49a4d2a9d1f8f549ebd0c2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 4baa4037-9806-4ec1-80d9-c479f1ec0a0f
+      X-Runtime:
+      - '0.115954'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6NTAzODUsIm5hbWUiOiJkci56d2VpZywgYXNzaXN0YW50IiwiZGVzY3JpcHRpb24iOiIiLCJzdWJ0aXRsZSI6IiIsInBob3RvX3VybCI6Ii8vYXBwLnNhbWVkaS5kZS9pbWFnZXMvcGhvdG8taGVhbGVyLW1hbGUtbWlzc2luZy5wbmcifSx7ImlkIjo1MDQwOSwibmFtZSI6IlRlcm1pbiBmw7xyIE9ubGluZS1WaWRlb3NwcmVjaHN0dW5kZSIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfSx7ImlkIjo0Nzc0OCwibmFtZSI6IlNjaG5lbGxzdGVyIFRlcm1pbiIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfSx7ImlkIjoyNDQxLCJuYW1lIjoiWndlaWcsIFRob3JzdGVuIiwiZGVzY3JpcHRpb24iOiIiLCJzdWJ0aXRsZSI6IkZhY2hhcnp0IGbDvHIgQWxsZ2VtZWlubWVkaXppbiIsInBob3RvX3VybCI6Ii8vYXBwLnNhbWVkaS5kZS9waG90b3MvNDQ3P3RodW1ibmFpbD1zbWFsbCJ9LHsiaWQiOjY3OTcsIm5hbWUiOiJBcnp0IDEiLCJkZXNjcmlwdGlvbiI6bnVsbCwic3VidGl0bGUiOm51bGwsInBob3RvX3VybCI6bnVsbH0seyJpZCI6Njc5OCwibmFtZSI6IkFyenQgMiIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfSx7ImlkIjo0MzQ0OCwibmFtZSI6ImVrZyIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfSx7ImlkIjoxNjI0NSwibmFtZSI6IkhOTyIsImRlc2NyaXB0aW9uIjpudWxsLCJzdWJ0aXRsZSI6bnVsbCwicGhvdG9fdXJsIjpudWxsfV0sInNjb3BlIjoibGltaXRlZCJ9
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=00JDFP8A3KYME1FA
+  recorded_at: Fri, 26 Oct 2018 09:30:38 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=2441
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:42 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"e588b2e033e48c6385e9043617327f1f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - f19a2eed-5d2e-4659-8ab9-2c6cf19939aa
+      X-Runtime:
+      - '0.146660'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6MjkxMjcsIm5hbWUiOiJBa3VwdW5rdHVyIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6ZmFsc2UsImRlc2NyaXB0aW9uIjoiPHA+Qml0dGUgd8OkaGxlbiBTaWUgenVyIFRlcm1pbnZlcmVpbmJhcnVuZyBmw7xyIEFrdXB1bmt0dXIgZGllc2UgVGVybWluYXJ0LjwvcD5cblxuPHA+RGllc2UgTGVpc3R1bmcgZ2Vow7ZydCB6dSBkZW4gSW5kaXZpZHVlbGxlbiBHZXN1bmRoZWl0c2xlaXN0dW5nZW4gZGVyIFZvcnNvcmdlLSB1bmQgU2VydmljZS1NZWRpemluLCBkaWUgdm9uIGRlciBHZXNldHpsaWNoZW4gS3JhbmtlbnZlcnNpY2hlcnVuZyAoR0tWKSBuaWNodCBhYmdlZGVja3Qgd2VyZGVuIHVuZCBzb21pdCBzZWxidCB6dSB6YWhsZW4gc2luZC48L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6MTYxNjIyLCJuYW1lIjoiTVMgMjg5IiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6ZmFsc2UsImRlc2NyaXB0aW9uIjoiIiwiaXNfdmlkZW9fY29uc3VsdGF0aW9uIjpmYWxzZSwicGF0aWVudF9jYW5fYm9va193aXRob3V0X2FjY291bnQiOnRydWV9LHsiaWQiOjM3NzExLCJuYW1lIjoiU3ByZWNoc3R1bmRlIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiI8cD5IaWVybWl0IGJ1Y2hlbiBTaWUmbmJzcDt2ZXJiaW5kbGljaCZuYnNwO2VpbmVuIFRlcm1pbiBmw7xyIGVpbmUgU3ByZWNoc3R1bmRlIGluIGRlciBQcmF4aXMgLSDDvGJlciBkZW4mbmJzcDtBcnp0dGVybWluLU9ubGluZS1TZXJ2aWNlICh0ay5zYW1lZGkuZGUpIElocmVyIFRlY2huaWtlciBLcmFua2Vua2Fzc2UgKFRLKS4mbmJzcDs8L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6MTU2NDgxLCJuYW1lIjoiU3ByZWNoc3R1bmRlIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiI8cD5IaWVybWl0IGJ1Y2hlbiBTaWUmbmJzcDt2ZXJiaW5kbGljaCZuYnNwO2VpbmVuIFRlcm1pbiBmw7xyIGVpbmUgU3ByZWNoc3R1bmRlIGluIGRlciBQcmF4aXMgLSDDvGJlciBkZW4mbmJzcDtBcnp0dGVybWluLU9ubGluZS1TZXJ2aWNlICh0ay5zYW1lZGkuZGUpIElocmVyIFRlY2huaWtlciBLcmFua2Vua2Fzc2UgKFRLKS4mbmJzcDs8L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX0seyJpZCI6MTY3ODk5LCJuYW1lIjoiU3ByZWNoc3R1bmRlIChpbnRlcm4gdW5kIG9ubGluZSkiLCJjb21tZW50X2Zvcm0iOm51bGwsImF0dGVuZGFudF91c2VyX3JlcXVpcmVkIjp0cnVlLCJkZXNjcmlwdGlvbiI6IjxwPkhpZXJtaXQgYnVjaGVuIFNpZSZuYnNwO3ZlcmJpbmRsaWNoJm5ic3A7ZWluZW4gVGVybWluIGbDvHIgZWluZSBTcHJlY2hzdHVuZGUgaW4gZGVyIFByYXhpcyAtIMO8YmVyIGRlbiZuYnNwO0FyenR0ZXJtaW4tT25saW5lLVNlcnZpY2UgKHRrLnNhbWVkaS5kZSkgSWhyZXIgVGVjaG5pa2VyIEtyYW5rZW5rYXNzZSAoVEspLiZuYnNwOzwvcD5cbiIsImlzX3ZpZGVvX2NvbnN1bHRhdGlvbiI6ZmFsc2UsInBhdGllbnRfY2FuX2Jvb2tfd2l0aG91dF9hY2NvdW50Ijp0cnVlfV0sInNjb3BlIjoibGltaXRlZCIsImV2ZW50X2NhdGVnb3J5X2lkIjoiMjQ0MSIsInRhZ2dlZCI6bnVsbH0=
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=2441
+  recorded_at: Fri, 26 Oct 2018 09:30:42 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=2441&event_type_id=29127&from=2018-10-26&to=2019-03-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:44 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"e1cf52e10c73648e1c7dd913ff6b2340"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 50f71cbb-3f52-41be-aa57-d4dad0b54ee3
+      X-Runtime:
+      - '1.273845'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"date":"2018-10-01","available":false},{"date":"2018-10-02","available":false},{"date":"2018-10-03","available":false},{"date":"2018-10-04","available":false},{"date":"2018-10-05","available":false},{"date":"2018-10-06","available":false},{"date":"2018-10-07","available":false},{"date":"2018-10-08","available":false},{"date":"2018-10-09","available":false},{"date":"2018-10-10","available":false},{"date":"2018-10-11","available":false},{"date":"2018-10-12","available":false},{"date":"2018-10-13","available":false},{"date":"2018-10-14","available":false},{"date":"2018-10-15","available":false},{"date":"2018-10-16","available":false},{"date":"2018-10-17","available":false},{"date":"2018-10-18","available":false},{"date":"2018-10-19","available":false},{"date":"2018-10-20","available":false},{"date":"2018-10-21","available":false},{"date":"2018-10-22","available":false},{"date":"2018-10-23","available":false},{"date":"2018-10-24","available":false},{"date":"2018-10-25","available":false},{"date":"2018-10-26","available":false},{"date":"2018-10-27","available":false},{"date":"2018-10-28","available":false},{"date":"2018-10-29","available":true},{"date":"2018-10-30","available":true},{"date":"2018-10-31","available":false},{"date":"2018-11-01","available":false},{"date":"2018-11-02","available":false},{"date":"2018-11-03","available":false},{"date":"2018-11-04","available":false},{"date":"2018-11-05","available":false},{"date":"2018-11-06","available":true},{"date":"2018-11-07","available":true},{"date":"2018-11-08","available":false},{"date":"2018-11-09","available":false},{"date":"2018-11-10","available":false},{"date":"2018-11-11","available":false},{"date":"2018-11-12","available":true},{"date":"2018-11-13","available":false},{"date":"2018-11-14","available":false},{"date":"2018-11-15","available":true},{"date":"2018-11-16","available":false},{"date":"2018-11-17","available":false},{"date":"2018-11-18","available":false},{"date":"2018-11-19","available":true},{"date":"2018-11-20","available":true},{"date":"2018-11-21","available":true},{"date":"2018-11-22","available":false},{"date":"2018-11-23","available":false},{"date":"2018-11-24","available":false},{"date":"2018-11-25","available":false},{"date":"2018-11-26","available":true},{"date":"2018-11-27","available":true},{"date":"2018-11-28","available":false},{"date":"2018-11-29","available":true},{"date":"2018-11-30","available":true},{"date":"2018-12-01","available":false},{"date":"2018-12-02","available":false},{"date":"2018-12-03","available":true},{"date":"2018-12-04","available":false},{"date":"2018-12-05","available":false},{"date":"2018-12-06","available":false},{"date":"2018-12-07","available":false},{"date":"2018-12-08","available":false},{"date":"2018-12-09","available":false},{"date":"2018-12-10","available":true},{"date":"2018-12-11","available":true},{"date":"2018-12-12","available":false},{"date":"2018-12-13","available":true},{"date":"2018-12-14","available":true},{"date":"2018-12-15","available":false},{"date":"2018-12-16","available":false},{"date":"2018-12-17","available":true},{"date":"2018-12-18","available":true},{"date":"2018-12-19","available":true},{"date":"2018-12-20","available":false},{"date":"2018-12-21","available":false},{"date":"2018-12-22","available":false},{"date":"2018-12-23","available":false},{"date":"2018-12-24","available":true},{"date":"2018-12-25","available":false},{"date":"2018-12-26","available":false},{"date":"2018-12-27","available":true},{"date":"2018-12-28","available":false},{"date":"2018-12-29","available":false},{"date":"2018-12-30","available":false},{"date":"2018-12-31","available":true},{"date":"2019-01-01","available":false},{"date":"2019-01-02","available":true},{"date":"2019-01-03","available":false},{"date":"2019-01-04","available":false},{"date":"2019-01-05","available":false},{"date":"2019-01-06","available":false},{"date":"2019-01-07","available":true},{"date":"2019-01-08","available":true},{"date":"2019-01-09","available":false},{"date":"2019-01-10","available":true},{"date":"2019-01-11","available":true},{"date":"2019-01-12","available":false},{"date":"2019-01-13","available":false},{"date":"2019-01-14","available":true},{"date":"2019-01-15","available":false},{"date":"2019-01-16","available":false},{"date":"2019-01-17","available":false},{"date":"2019-01-18","available":false},{"date":"2019-01-19","available":false},{"date":"2019-01-20","available":false},{"date":"2019-01-21","available":true},{"date":"2019-01-22","available":true},{"date":"2019-01-23","available":false},{"date":"2019-01-24","available":true},{"date":"2019-01-25","available":true},{"date":"2019-01-26","available":false},{"date":"2019-01-27","available":false},{"date":"2019-01-28","available":true},{"date":"2019-01-29","available":true},{"date":"2019-01-30","available":true},{"date":"2019-01-31","available":true},{"date":"2019-02-01","available":true},{"date":"2019-02-02","available":false},{"date":"2019-02-03","available":false},{"date":"2019-02-04","available":true},{"date":"2019-02-05","available":true},{"date":"2019-02-06","available":true},{"date":"2019-02-07","available":true},{"date":"2019-02-08","available":true},{"date":"2019-02-09","available":false},{"date":"2019-02-10","available":false},{"date":"2019-02-11","available":true},{"date":"2019-02-12","available":true},{"date":"2019-02-13","available":true},{"date":"2019-02-14","available":true},{"date":"2019-02-15","available":true},{"date":"2019-02-16","available":false},{"date":"2019-02-17","available":false},{"date":"2019-02-18","available":true},{"date":"2019-02-19","available":true},{"date":"2019-02-20","available":true},{"date":"2019-02-21","available":true},{"date":"2019-02-22","available":true},{"date":"2019-02-23","available":false},{"date":"2019-02-24","available":false},{"date":"2019-02-25","available":true},{"date":"2019-02-26","available":true},{"date":"2019-02-27","available":true},{"date":"2019-02-28","available":true},{"date":"2019-03-01","available":true},{"date":"2019-03-02","available":false},{"date":"2019-03-03","available":false},{"date":"2019-03-04","available":true},{"date":"2019-03-05","available":true},{"date":"2019-03-06","available":true},{"date":"2019-03-07","available":true},{"date":"2019-03-08","available":true},{"date":"2019-03-09","available":false},{"date":"2019-03-10","available":false},{"date":"2019-03-11","available":true},{"date":"2019-03-12","available":true},{"date":"2019-03-13","available":true},{"date":"2019-03-14","available":true},{"date":"2019-03-15","available":true},{"date":"2019-03-16","available":false},{"date":"2019-03-17","available":false},{"date":"2019-03-18","available":true},{"date":"2019-03-19","available":true},{"date":"2019-03-20","available":true},{"date":"2019-03-21","available":true},{"date":"2019-03-22","available":true},{"date":"2019-03-23","available":false},{"date":"2019-03-24","available":false},{"date":"2019-03-25","available":true},{"date":"2019-03-26","available":true},{"date":"2019-03-27","available":true},{"date":"2019-03-28","available":true},{"date":"2019-03-29","available":true},{"date":"2019-03-30","available":false},{"date":"2019-03-31","available":false},{"date":"2019-04-01","available":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=2441&event_type_id=29127&from=2018-10-26&to=2019-03-01
+  recorded_at: Fri, 26 Oct 2018 09:30:44 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&date=2018-11-01&event_category_id=2441&event_type_id=29127
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:45 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"85bfe4f4d9354eccf9aa978db91eaac1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 6713adf8-7eb1-4955-a56f-dd298481d6f2
+      X-Runtime:
+      - '0.460076'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"date":"2018-11-01","available":false},{"date":"2018-11-02","available":false},{"date":"2018-11-03","available":false},{"date":"2018-11-04","available":false},{"date":"2018-11-05","available":false},{"date":"2018-11-06","available":true},{"date":"2018-11-07","available":true},{"date":"2018-11-08","available":false},{"date":"2018-11-09","available":false},{"date":"2018-11-10","available":false},{"date":"2018-11-11","available":false},{"date":"2018-11-12","available":true},{"date":"2018-11-13","available":false},{"date":"2018-11-14","available":false},{"date":"2018-11-15","available":true},{"date":"2018-11-16","available":false},{"date":"2018-11-17","available":false},{"date":"2018-11-18","available":false},{"date":"2018-11-19","available":true},{"date":"2018-11-20","available":true},{"date":"2018-11-21","available":true},{"date":"2018-11-22","available":false},{"date":"2018-11-23","available":false},{"date":"2018-11-24","available":false},{"date":"2018-11-25","available":false},{"date":"2018-11-26","available":true},{"date":"2018-11-27","available":true},{"date":"2018-11-28","available":false},{"date":"2018-11-29","available":true},{"date":"2018-11-30","available":true},{"date":"2018-12-01","available":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&date=2018-11-01&event_category_id=2441&event_type_id=29127
+  recorded_at: Fri, 26 Oct 2018 09:30:45 GMT
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&date=2018-11-06&event_category_id=2441&event_type_id=29127
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:46 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"897b7e36103546feb0f1bee7ffe3c855"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 0fffef8a-0ab2-4af8-a71d-0c669ccac329
+      X-Runtime:
+      - '0.867914'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"time":"2018-11-06T09:05:00+01:00","token":"b89ed4ffba5a0934c9c116f6949aff712c1a650f"},{"time":"2018-11-06T10:00:00+01:00","token":"415eb0782d348bad1a30e206573301aaa49dc755"},{"time":"2018-11-06T11:00:00+01:00","token":"dc3c1681e1c57eb56e7c75c6223a377b7880d963"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&date=2018-11-06&event_category_id=2441&event_type_id=29127
+  recorded_at: Fri, 26 Oct 2018 09:30:46 GMT
+- request:
+    method: post
+    uri: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: event_category_id=2441&event_type_id=29127&starts_at=2018-11-06T08:05:00Z&token=b89ed4ffba5a0934c9c116f6949aff712c1a650f
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Authorization:
+      - Bearer <TEST_ACCESS_TOKEN>
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:47 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"ad4fa6b275eb2cf7a7ac1319232c40a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 92e6eae5-47b9-4646-8b9b-ab1595b4cbcf
+      X-Runtime:
+      - '0.601680'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"id":39087677,"name":"Akupunktur","external":true,"referral":false,"creator_type":"Patient::Patient","updater_type":null,"kind":"event","starts_at":"2018-11-06T09:05:00+01:00","attendant_id":"p4d04515349","structured_comment":[],"xref":null,"attendant_state":null,"ends_at":"2018-11-06T09:35:00+01:00","color":"blue","name_external":"Akupunktur","event_type_id":29127,"creator_id":"p4d04515349","updater_id":null,"updated_at":null,"lsn":1540546246947,"base_updated_at":null,"event_category_id":2441,"event_type_xref":"si_069b5066f7","attendant_xref":null,"duration":"00:30","practice_name":"Praxis
+        Zweig (DEMO)","practice_id":"00JDFP8A3KYME1FA","creator_name":null,"updater_name":null,"cancelable_until":"2018-11-06T09:05:00+01:00","editable":true,"course_id":null,"video_consultation":false,"course_participants":null}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
+  recorded_at: Fri, 26 Oct 2018 09:30:47 GMT
+recorded_with: VCR 4.0.0

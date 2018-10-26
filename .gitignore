@@ -13,7 +13,6 @@
 !/log/.keep
 !/tmp/.keep
 
-
 /node_modules
 /yarn-error.log
 
@@ -27,3 +26,14 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore YARD docs
+/.yardoc
+/doc
+
+# Ignore .env that contains real credentials for development.
+# Initialize own copy by copying example.env and setting custom values.
+/.env
+
+# Ignore coverage report
+/coverage

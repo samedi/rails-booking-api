@@ -1,0 +1,40 @@
+!!!
+%html.no-js
+  %head
+    %meta{content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}/
+    %meta{name: 'viewport', content: "width=device-width"}/
+    %title= t(:site_title)
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_pack_tag 'stylesheets', media: 'all'
+  %body
+    %header.page-header
+      .top-bar
+        .top-bar-left
+          %ul.menu.simple.main-menu
+            %li
+              %h1.logo
+                = link_to(t('site_title'), root_url)
+        .top-bar-right
+          %ul.menu
+            - if current_patient
+              %li
+                = form_tag sign_out_path do
+                  = submit_tag t(:sign_out), class: 'button'
+            - else
+              %li
+                = link_to(t(:sign_in), '/samedi/oauth')
+              %li
+                = link_to(t(:register), 'https://patient.samedi.de/user/new')
+
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell
+          = yield :subheader
+      .grid-x.grid-margin-x
+        .cell.large-4
+          = yield :sidebar
+        .cell.large-8
+          = yield
+
+    = javascript_pack_tag 'application'

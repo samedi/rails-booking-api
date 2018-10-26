@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/practices/BCMNWE2W3N2R3Z4K?client_id=<CLIENT_ID>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:51 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"7d3245a2013b04dcc489777bbad7000f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - bd8df790-6990-4b60-9770-fd01c73c1da3
+      X-Runtime:
+      - '0.101541'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"name":"Krankenkasse VM","required_patient_fields":["first_name","last_name","mobile","email"],"photo_url":"//app.samedi.de/photos/33724?thumbnail=small"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/practices/BCMNWE2W3N2R3Z4K?client_id=<CLIENT_ID>
+  recorded_at: Fri, 26 Oct 2018 09:30:51 GMT
+recorded_with: VCR 4.0.0

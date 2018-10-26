@@ -1,0 +1,15 @@
+%li.callout
+  - if event_category.photo_url
+    = image_tag(event_category.photo_url, alt: t('.event_category_photo_alt', name: event_category.name))
+  %h4
+    = event_category.name
+  %div
+    - if event_category.subtitle
+      %p
+        = event_category.subtitle
+    %div
+      != event_category.description
+  %div
+    = link_to(event_types_path(institution_id: event_category.institution.id, event_category_id: event_category.id), class: 'callout-next-button select-category-button', title: t('.book_with_name', name: event_category.name)) do
+      %span
+        = t('.book')

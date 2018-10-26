@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 29 Oct 2018 09:37:22 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"373ba49e7095c12785e5d8dab0b7fe9c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - dce71858-502a-4b27-8d43-83183e2c9ae8
+      X-Runtime:
+      - '0.298555'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"time":"2018-10-29T09:50:00+01:00","token":"f48b3c71df59a804a28ef5631b3868c53a005270"},{"time":"2018-10-29T10:00:00+01:00","token":"5f1bb3aa978ae9b88cf7ef170c9f552f05365a97"},{"time":"2018-10-29T11:00:00+01:00","token":"06f6d0a9ded48f388d8a63e8002877998c0c5834"},{"time":"2018-10-29T15:00:00+01:00","token":"6685dc16e10e787ebccd4894f71eaa8f0ba2e2ac"},{"time":"2018-10-29T16:00:00+01:00","token":"44e36d1a18eb6e45cf7f4b782d0aea472f4f0c49"},{"time":"2018-10-29T17:00:00+01:00","token":"6e1fca11cdb386c7c0b3601329578b9577eca7ab"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481
+  recorded_at: Fri, 29 Oct 2018 09:37:22 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,9 @@
+%li.callout
+  %h4
+    = event_type.name
+  %div
+    != event_type.description
+  %div
+    = link_to(event_dates_path(institution_id: event_type.institution.id, event_category_id: event_type.event_category.id, event_type_id: event_type.id), class: 'callout-next-button select-category-button', title: t('.book_with_name', name: event_type.name)) do
+      %span
+        = t('.book')

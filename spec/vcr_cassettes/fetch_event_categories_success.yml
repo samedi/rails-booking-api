@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=BCMNWE2W3N2R3Z4K
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:29 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"f27914ddc7a57dc49c3776046331838a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - db3319fa-2256-49ca-813c-48b9cef34933
+      X-Runtime:
+      - '0.176506'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":9103,"name":"Sprechstunde","description":null,"subtitle":null,"photo_url":null},{"id":11102,"name":"Dr.
+        Peter","description":null,"subtitle":null,"photo_url":null}],"scope":"all"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_categories?client_id=<CLIENT_ID>&practice_id=BCMNWE2W3N2R3Z4K
+  recorded_at: Fri, 26 Oct 2018 09:30:29 GMT
+recorded_with: VCR 4.0.0

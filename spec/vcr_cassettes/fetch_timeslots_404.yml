@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=18446744073709551615&event_type_id=18446744073709551615
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 29 Oct 2018 09:32:23 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      Cache-Control:
+      - no-cache
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 90c6e2c9-f80a-4a16-bc4c-058b5ff5e1bd
+      X-Runtime:
+      - '0.058117'
+    body:
+      encoding: UTF-8
+      string: '{"error":"Event type or category not found."}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=18446744073709551615&event_type_id=18446744073709551615
+  recorded_at: Fri, 29 Oct 2018 09:32:23 GMT
+recorded_with: VCR 4.0.0

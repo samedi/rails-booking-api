@@ -1,0 +1,8 @@
+- content_for :subheader do
+  %h2
+    = @institution.name
+  %h3
+    = t('.title')
+
+%ul.event-categories-list
+  = render partial: 'event_categories/event_category', collection: @event_categories

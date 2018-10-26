@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=50409
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:30:30 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"8a1e37a7b3db1ca72e2c8ba36585fd9f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 5cdd6774-65b5-4f9d-ac71-52526f4f8655
+      X-Runtime:
+      - '0.082348'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6MTU2NDgxLCJuYW1lIjoiU3ByZWNoc3R1bmRlIiwiY29tbWVudF9mb3JtIjpudWxsLCJhdHRlbmRhbnRfdXNlcl9yZXF1aXJlZCI6dHJ1ZSwiZGVzY3JpcHRpb24iOiI8cD5IaWVybWl0IGJ1Y2hlbiBTaWUmbmJzcDt2ZXJiaW5kbGljaCZuYnNwO2VpbmVuIFRlcm1pbiBmw7xyIGVpbmUgU3ByZWNoc3R1bmRlIGluIGRlciBQcmF4aXMgLSDDvGJlciBkZW4mbmJzcDtBcnp0dGVybWluLU9ubGluZS1TZXJ2aWNlICh0ay5zYW1lZGkuZGUpIElocmVyIFRlY2huaWtlciBLcmFua2Vua2Fzc2UgKFRLKS4mbmJzcDs8L3A+XG4iLCJpc192aWRlb19jb25zdWx0YXRpb24iOmZhbHNlLCJwYXRpZW50X2Nhbl9ib29rX3dpdGhvdXRfYWNjb3VudCI6dHJ1ZX1dLCJzY29wZSI6ImFsbCIsImV2ZW50X2NhdGVnb3J5X2lkIjoiNTA0MDkiLCJ0YWdnZWQiOm51bGx9
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/event_types?client_id=<CLIENT_ID>&event_category_id=50409
+  recorded_at: Fri, 26 Oct 2018 09:30:30 GMT
+recorded_with: VCR 4.0.0

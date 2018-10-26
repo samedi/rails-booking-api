@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.15.3
+      Date:
+      - Fri, 26 Oct 2018 09:33:05 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-XSS-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Vary:
+      - Origin
+      ETag:
+      - W/"fd907ded5551ea6c4b2edccbccd7e1a4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      P3P:
+      - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
+      X-Request-Id:
+      - 962e1cbc-8137-4fae-852f-b29fd2f34e9a
+      X-Runtime:
+      - '0.230540'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"date":"2018-10-01","available":false},{"date":"2018-10-02","available":false},{"date":"2018-10-03","available":false},{"date":"2018-10-04","available":false},{"date":"2018-10-05","available":false},{"date":"2018-10-06","available":false},{"date":"2018-10-07","available":false},{"date":"2018-10-08","available":false},{"date":"2018-10-09","available":false},{"date":"2018-10-10","available":false},{"date":"2018-10-11","available":false},{"date":"2018-10-12","available":false},{"date":"2018-10-13","available":false},{"date":"2018-10-14","available":false},{"date":"2018-10-15","available":false},{"date":"2018-10-16","available":false},{"date":"2018-10-17","available":false},{"date":"2018-10-18","available":false},{"date":"2018-10-19","available":false},{"date":"2018-10-20","available":false},{"date":"2018-10-21","available":false},{"date":"2018-10-22","available":false},{"date":"2018-10-23","available":false},{"date":"2018-10-24","available":false},{"date":"2018-10-25","available":false},{"date":"2018-10-26","available":false},{"date":"2018-10-27","available":false},{"date":"2018-10-28","available":false},{"date":"2018-10-29","available":true},{"date":"2018-10-30","available":true},{"date":"2018-10-31","available":true},{"date":"2018-11-01","available":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://patient.samedi.de/api/booking/v3/dates?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481
+  recorded_at: Fri, 26 Oct 2018 09:33:05 GMT
+recorded_with: VCR 4.0.0

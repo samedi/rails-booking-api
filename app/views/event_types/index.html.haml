@@ -1,0 +1,14 @@
+- content_for :subheader do
+  %h2
+    = @institution.name
+  %h3
+    = @event_category.name
+  %h4
+    = t('.title')
+
+- content_for :sidebar do
+  %p
+    = link_to(t('.back_html'), event_categories_path(institution_id: @institution.id), class: 'back-link')
+
+%ul.event-types-list
+  = render partial: 'event_types/event_type', collection: @event_types

@@ -1,0 +1,28 @@
+AllCops:
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - 'db/**/*'
+    - 'bin/{rails,rake,setup,spring,update,webpack,webpack-dev-server,yarn}'
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'Guardfile'
+    - 'config/**/*.rb'
+    - 'spec/**/*.rb'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'config/**/*.rb'
+    - 'spec/**/*.rb'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/BlockDelimiters:
+  EnforcedStyle: semantic

@@ -1,33 +1,91 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  time:
+    formats:
+      date_only: '%A, %-d. %B %Y'
+      time_only: '%H:%M'
+  date:
+    formats:
+      day_only: '%-d'
+      date_only: '%A, %-d. %B %Y'
+      month_and_year: '%B %Y'
+  calendar:
+    first_day_of_week: 1
+    very_short_day_names: [S, M, T, W, T, F, S]
+  site_title: Samedi Rails API Client
+  en: en
+  sign_in: Sign in
+  register: Register
+  sign_out: Sign out
+  event_category_label: Category
+  event_type_label: Type
+  date_label: Date
+  time_label: Time
+  option_yes: 'Yes'
+  option_no: 'No'
+  event_categories:
+    index:
+      title: Select a category
+    event_category:
+      event_category_photo_alt: 'Photograph showing %{name}'
+      book: Select
+      book_with_name: 'Select "%{name}"'
+  event_types:
+    index:
+      title: Select a type
+      back_html: 'Back to categories'
+    event_type:
+      book: Select
+      book_with_name: 'Select "%{name}"'
+  event_dates:
+    index:
+      title: Select a date
+      back_html: 'Back to types'
+      previous_month: Previous month
+      next_month: Next month
+  event_timeslots:
+    index:
+      title: Select a time
+      back_html: 'Back to calendar'
+  bookings:
+    new:
+      title: Confirm Your Booking
+      subtitle: Verify Details and Confirm Your Booking
+      sign_in_prompt_html: Please log in with your samedi&reg; account to book this appointment.
+      sign_in_html: Sign in with your samedi&reg; account
+      back_html: 'Back to times'
+      book: Confirm Booking
+    success:
+      title: Booking Successful
+      subtitle: Your appointment was successfully booked
+      back_html: 'Back to homepage'
+      your_booking_id_html: 'Your booking id is: <strong class="booking-id">%{booking_id}</strong>'
+  sessions:
+    show_access_token:
+      your_access_token_is: 'Your access token is: %{access_token}'
+  manage:
+    keywords:
+      index:
+        title: Keywords
+  errors:
+    format: "%{message}"
+  activemodel:
+    errors:
+      models:
+        comment_form:
+          blank: This field is required and cannot be empty.
+          inclusion: This field is required and a value must be selected.
+          accepted: You must select "Yes" for this field.
+        booking_details:
+          accepted: The booking cannot be performed without your consent.
+  simple_form:
+    "yes": Yes
+    "no": No
+    labels:
+      booking_details:
+        consent_to_sharing_private_data: I provide consent to share my private data with %{institution} to complete the booking
+        receive_notifications: I want to receive notifications related to my booking
+    required:
+      text: Required field
+      mark: '*'
+    error_notification:
+      default_message: "Please review the problems below:"

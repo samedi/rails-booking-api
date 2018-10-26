@@ -1,0 +1,7 @@
+%h1
+  Enter an institution ID
+
+= form_tag event_categories_path, method: :get do
+  = label_tag :institution_id, 'Institution ID'
+  = text_field_tag :institution_id
+  = submit_tag
