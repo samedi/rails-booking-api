@@ -1,5 +1,7 @@
 # Samedi Rails API Client
 
+[![Build Status](https://travis-ci.com/samedi/rails-booking-api.svg?branch=master)](https://travis-ci.com/samedi/rails-booking-api)
+
 This application is a reference implementation of the [samedi Booking API](https://wiki.samedi.de/display/doc/Booking+API) client in Ruby.
 
 This is a web application that allows a user to book an appointment for a given clinic.
