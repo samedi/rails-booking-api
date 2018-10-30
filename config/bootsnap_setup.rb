@@ -36,11 +36,11 @@ unless cache_dir
 end
 
 Bootsnap.setup(
-  cache_dir:            cache_dir,
-  development_mode:     development_mode,
-  load_path_cache:      true,
+  cache_dir: cache_dir,
+  development_mode: development_mode,
+  load_path_cache: true,
   autoload_paths_cache: true, # assume rails. open to PRs to impl. detection
-  disable_trace:        false,
-  compile_cache_iseq:   enable_cc && !ENV['COVERAGE'],
-  compile_cache_yaml:   enable_cc
+  disable_trace: false,
+  compile_cache_iseq: enable_cc && !ENV['COVERAGE'],
+  compile_cache_yaml: enable_cc
 )
