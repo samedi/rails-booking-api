@@ -19,7 +19,7 @@ require 'test_service_container'
 
 RSpec.describe BookEvent do
   describe '#call' do
-    let(:today) { Date.new(2018, 10, 2) }
+    let(:today) { Date.new(2018, 10, 30) }
 
     it 'responds with a BookingConfirmation', vcr: { cassette_name: 'book_event' } do
       patient = Patient.new(access_token: ENV['TEST_ACCESS_TOKEN'])

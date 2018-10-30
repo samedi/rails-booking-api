@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-10-08&to=2018-11-09
+    uri: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-11-05&to=2018-12-07
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.15.3
       Expect:
       - ''
   response:
@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - nginx/1.15.3
       Date:
-      - Fri, 26 Oct 2018 09:30:52 GMT
+      - Tue, 30 Oct 2018 11:32:26 GMT
       Content-Type:
       - text/plain; charset=utf-8
       Transfer-Encoding:
@@ -33,33 +33,33 @@ http_interactions:
       Vary:
       - Origin
       ETag:
-      - W/"a4242c5ae5291e9c0d72eee0dcf58f86"
+      - W/"8a4287662b9666af9b4ed3f80974d325"
       Cache-Control:
       - max-age=0, private, must-revalidate
       P3P:
       - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
       X-Request-Id:
-      - 50078378-95c9-4922-b79d-df26068495a6
+      - 1d14adf6-65d2-4b32-a09b-fdfbb2a60d2f
       X-Runtime:
-      - '0.222832'
+      - '0.227465'
       Strict-Transport-Security:
       - max-age=31536000
     body:
       encoding: UTF-8
-      string: '{"data":[{"time":"2018-10-26T11:35:00+02:00","token":"e88f1c24d8a8851f3983f71b2620393bf8452802"},{"time":"2018-10-29T09:50:00+01:00","token":"f48b3c71df59a804a28ef5631b3868c53a005270"},{"time":"2018-10-29T10:00:00+01:00","token":"5f1bb3aa978ae9b88cf7ef170c9f552f05365a97"},{"time":"2018-10-29T11:00:00+01:00","token":"06f6d0a9ded48f388d8a63e8002877998c0c5834"},{"time":"2018-10-29T15:00:00+01:00","token":"6685dc16e10e787ebccd4894f71eaa8f0ba2e2ac"},{"time":"2018-10-29T16:00:00+01:00","token":"44e36d1a18eb6e45cf7f4b782d0aea472f4f0c49"},{"time":"2018-10-29T17:00:00+01:00","token":"6e1fca11cdb386c7c0b3601329578b9577eca7ab"},{"time":"2018-10-30T09:20:00+01:00","token":"967dd24c3230a01e8c37da4c46b0d16ecca29f8d"},{"time":"2018-10-30T10:00:00+01:00","token":"d4568d1fc5ac4b385c43298a2f995308fd840872"},{"time":"2018-10-30T11:00:00+01:00","token":"76002e8ebb45928ee98fc66730b6d1720b126991"},{"time":"2018-10-31T09:00:00+01:00","token":"2e97e9847028771eb093ee103f007f6256ffc595"},{"time":"2018-10-31T10:00:00+01:00","token":"d3a899e8292edb911d074095da87828a3dfb6c57"},{"time":"2018-10-31T11:05:00+01:00","token":"f656e1392432973801f496de389fd446cb25275d"},{"time":"2018-11-02T09:05:00+01:00","token":"d23a4861c7727d594d1f6b9519f401b4531569dd"},{"time":"2018-11-02T10:05:00+01:00","token":"52eb627ff9e2ef217f228dacfe47b0ca9b14e82d"},{"time":"2018-11-02T11:05:00+01:00","token":"048f9a6358c1eb43edba30edd77512f17d745ba1"},{"time":"2018-11-05T09:05:00+01:00","token":"742391306b9cb69a410b163bf6c25167c536cdde"},{"time":"2018-11-05T10:05:00+01:00","token":"5f3f99ff84cc74aca1910a4695b0673f8d06fdf3"},{"time":"2018-11-05T11:05:00+01:00","token":"5326ca78df532218918c98773814491fffeb05bc"},{"time":"2018-11-05T15:00:00+01:00","token":"c759212c32413c458d881c5a2e64fffc8a73e755"},{"time":"2018-11-05T16:00:00+01:00","token":"1bd53dbc4c240f42a68fc9e9dfdb25d894008e35"},{"time":"2018-11-05T17:00:00+01:00","token":"e3616a44f1431be41fb09a18d9fd3a31ee2e2547"},{"time":"2018-11-06T09:05:00+01:00","token":"b89ed4ffba5a0934c9c116f6949aff712c1a650f"},{"time":"2018-11-06T10:00:00+01:00","token":"415eb0782d348bad1a30e206573301aaa49dc755"},{"time":"2018-11-06T11:00:00+01:00","token":"dc3c1681e1c57eb56e7c75c6223a377b7880d963"},{"time":"2018-11-07T09:00:00+01:00","token":"b04186f4c4c9eba44367d4de2a17834879106bf7"},{"time":"2018-11-07T10:00:00+01:00","token":"d4ba700e3fecb52dc9020f0daba53859b4bd5be5"},{"time":"2018-11-07T11:00:00+01:00","token":"04375805d0a016709ecbe2c98ee20e6ba55e5181"},{"time":"2018-11-08T09:00:00+01:00","token":"3b90ec741040a4fa778e01a849eefd8a783c8a9e"},{"time":"2018-11-08T10:00:00+01:00","token":"b3adcca000d761441ffcc666ff745ed8f0f82caf"},{"time":"2018-11-08T11:00:00+01:00","token":"8f49f482f75331b12091a089efd3cb7d240624d9"},{"time":"2018-11-08T15:00:00+01:00","token":"ea61bb37b857f3aed8c154270174d4d01b397968"},{"time":"2018-11-08T16:00:00+01:00","token":"f63ffb9eed81ca169da5d8608b3ac35cba2ab64d"},{"time":"2018-11-08T17:00:00+01:00","token":"e19d1e550018d3936f08a0d2be49bb447ec3a093"},{"time":"2018-11-09T09:00:00+01:00","token":"2d049ed33cd309b7e6c8167a97a4fdd6669a1a51"},{"time":"2018-11-09T10:00:00+01:00","token":"055e0d9d2f921c8917e1bf5c16f6893b0b3f0b13"},{"time":"2018-11-09T11:00:00+01:00","token":"aa491e39e2fe65f05b2d348036ef3a134e851f8a"}]}'
+      string: '{"data":[{"time":"2018-11-05T09:05:00+01:00","token":"742391306b9cb69a410b163bf6c25167c536cdde"},{"time":"2018-11-05T10:05:00+01:00","token":"5f3f99ff84cc74aca1910a4695b0673f8d06fdf3"},{"time":"2018-11-05T11:05:00+01:00","token":"5326ca78df532218918c98773814491fffeb05bc"},{"time":"2018-11-05T15:00:00+01:00","token":"c759212c32413c458d881c5a2e64fffc8a73e755"},{"time":"2018-11-05T16:00:00+01:00","token":"1bd53dbc4c240f42a68fc9e9dfdb25d894008e35"},{"time":"2018-11-05T17:00:00+01:00","token":"e3616a44f1431be41fb09a18d9fd3a31ee2e2547"},{"time":"2018-11-06T09:05:00+01:00","token":"b89ed4ffba5a0934c9c116f6949aff712c1a650f"},{"time":"2018-11-06T10:00:00+01:00","token":"415eb0782d348bad1a30e206573301aaa49dc755"},{"time":"2018-11-06T11:00:00+01:00","token":"dc3c1681e1c57eb56e7c75c6223a377b7880d963"},{"time":"2018-11-07T09:00:00+01:00","token":"b04186f4c4c9eba44367d4de2a17834879106bf7"},{"time":"2018-11-07T10:00:00+01:00","token":"d4ba700e3fecb52dc9020f0daba53859b4bd5be5"},{"time":"2018-11-07T11:00:00+01:00","token":"04375805d0a016709ecbe2c98ee20e6ba55e5181"},{"time":"2018-11-08T09:00:00+01:00","token":"3b90ec741040a4fa778e01a849eefd8a783c8a9e"},{"time":"2018-11-08T10:00:00+01:00","token":"b3adcca000d761441ffcc666ff745ed8f0f82caf"},{"time":"2018-11-08T11:00:00+01:00","token":"8f49f482f75331b12091a089efd3cb7d240624d9"},{"time":"2018-11-08T15:00:00+01:00","token":"ea61bb37b857f3aed8c154270174d4d01b397968"},{"time":"2018-11-08T16:00:00+01:00","token":"f63ffb9eed81ca169da5d8608b3ac35cba2ab64d"},{"time":"2018-11-08T17:00:00+01:00","token":"e19d1e550018d3936f08a0d2be49bb447ec3a093"},{"time":"2018-11-09T09:00:00+01:00","token":"2d049ed33cd309b7e6c8167a97a4fdd6669a1a51"},{"time":"2018-11-09T10:00:00+01:00","token":"055e0d9d2f921c8917e1bf5c16f6893b0b3f0b13"},{"time":"2018-11-09T11:00:00+01:00","token":"aa491e39e2fe65f05b2d348036ef3a134e851f8a"},{"time":"2018-11-12T09:00:00+01:00","token":"8fa16aa822bcc9104611c1779bb0a6381bfcbfc6"},{"time":"2018-11-12T10:00:00+01:00","token":"b4363f4583d30fd78a2d318c755e115771c6b899"},{"time":"2018-11-12T11:00:00+01:00","token":"859521517353a0c8fbe125c341b82c8543c5f993"},{"time":"2018-11-12T15:00:00+01:00","token":"5c6599cba1d7d24ac6b1df176655efabbda5c3da"},{"time":"2018-11-12T16:00:00+01:00","token":"c034d2a6f94d6bb475bff8e691b0ee9de66308da"},{"time":"2018-11-12T17:00:00+01:00","token":"834dfec04c97a944c4b8e45c02860956800801ef"},{"time":"2018-11-13T09:00:00+01:00","token":"efc12cadac11c44e900b65e63e42bc73a82085ef"},{"time":"2018-11-13T10:00:00+01:00","token":"7a0ef00984cd89972954ef758e5ad014ea5b05d9"},{"time":"2018-11-13T11:00:00+01:00","token":"5633eaa39a015b3efdd7601636cc0e7065972a40"},{"time":"2018-11-14T09:00:00+01:00","token":"680e63b81d3db034f315232c109b1823caff144b"},{"time":"2018-11-14T10:00:00+01:00","token":"f7cab1fac1a1bf26ed9034fdc0a1f888d1df0bc1"},{"time":"2018-11-14T11:00:00+01:00","token":"3b3d57a1ef088d1fad37bd86ff813328df8d765c"},{"time":"2018-11-15T09:00:00+01:00","token":"80d9e86cf8c5a68c1155619cf2a5f7acc94ec6bc"},{"time":"2018-11-15T10:00:00+01:00","token":"8827dcf9eaa587dd188b3efc4b974eafdaf2c3b5"},{"time":"2018-11-15T11:00:00+01:00","token":"70ad07cc131855d133ab26a1d032ed20cbf4e6c6"},{"time":"2018-11-15T15:00:00+01:00","token":"4f3033095a3ee39517c8261212b6bedd38022a43"},{"time":"2018-11-15T16:00:00+01:00","token":"c1d3f3cf27700f8179198e8ec55810e7cec67bb8"},{"time":"2018-11-15T17:00:00+01:00","token":"c0a0156ef58b0a3aee42b87b5d037150a7887862"},{"time":"2018-11-16T09:00:00+01:00","token":"0a09b6f48454f519114b16eb7c6c2959fe563364"},{"time":"2018-11-16T10:00:00+01:00","token":"522337fd9207f6552b24083daef39c573f3b8497"},{"time":"2018-11-16T11:00:00+01:00","token":"e63a7a003f90ea594f9e5cd5aa514f9613c9af25"},{"time":"2018-11-19T09:00:00+01:00","token":"527b4decf6099c64f73f5b294608b42c2e9d48db"},{"time":"2018-11-19T10:00:00+01:00","token":"a3b450863e7858faf85ff1b61be32856d02801e7"},{"time":"2018-11-19T11:00:00+01:00","token":"5d4195b55c59cf466c58f3984fa1ef4063e3f205"},{"time":"2018-11-19T15:00:00+01:00","token":"945e2ac9e4d1d7057d4a817af98dca16db50f789"},{"time":"2018-11-19T16:00:00+01:00","token":"58f3dd8fbe00635952d06741ebe1a17c2626aaf5"},{"time":"2018-11-19T17:00:00+01:00","token":"2506cded65f66ff793133c4c008781bd375c6cbd"},{"time":"2018-11-20T09:00:00+01:00","token":"4770ad366b945d1063d73d8c415a5cf391ecebed"},{"time":"2018-11-20T10:00:00+01:00","token":"633217ee9eb9f2b4a04e62217e09ab62e1a4332a"},{"time":"2018-11-20T11:00:00+01:00","token":"96319a1d4106ce510e51e9ae14a4c7ce4939b385"},{"time":"2018-11-21T09:25:00+01:00","token":"038ed42a8c3ef296f1554e93ca99478c81546ffe"},{"time":"2018-11-21T10:00:00+01:00","token":"b70c9beca651c94146a41de74484a824cec43266"},{"time":"2018-11-21T11:00:00+01:00","token":"a3011c0144485345755b2eddccb7970c0d6e1851"},{"time":"2018-11-22T09:35:00+01:00","token":"7f6d52fda0d457d43af1f8a26583b0be53bea1a8"},{"time":"2018-11-22T10:00:00+01:00","token":"d6b94c47e3abd7926fcefdef8f705d8e2656d9f2"},{"time":"2018-11-22T11:00:00+01:00","token":"c864c79c64b0ee89484fe504b654e76297bca670"},{"time":"2018-11-22T15:00:00+01:00","token":"70d40c422c35620478e67e2888d6353081a4bbaf"},{"time":"2018-11-22T16:00:00+01:00","token":"49ee346ee2418d90cdf457c3180c7a0e120f4c7b"},{"time":"2018-11-22T17:00:00+01:00","token":"ab2b514155749a3356da56ec6237faf4f130812c"},{"time":"2018-11-23T09:00:00+01:00","token":"339daf7465a5f2e65555196d5238ec0e9a27646f"},{"time":"2018-11-23T10:00:00+01:00","token":"cb92f25e5cb5b4d24f48e18e0e14b9c943392b84"},{"time":"2018-11-23T11:00:00+01:00","token":"5e04a79e360254e0ab83d0a2b2b2675b1a7a64ee"},{"time":"2018-11-26T09:25:00+01:00","token":"d7cf203ae32d10b84db739ac2a49463c95149aaf"},{"time":"2018-11-26T10:00:00+01:00","token":"29760f602ba37b4b452d46099326b1d8426d2800"},{"time":"2018-11-26T11:00:00+01:00","token":"d500c01d1fc8d0628c23323c113969290fb580bd"},{"time":"2018-11-26T15:00:00+01:00","token":"9fde70bf5c5c09eb21b6350523741086ea46a3a8"},{"time":"2018-11-26T16:00:00+01:00","token":"c8b06eb33bbe176582d2ac4a57b2906086f20156"},{"time":"2018-11-26T17:00:00+01:00","token":"0827222db079cfed63e897648df17372ca34c035"},{"time":"2018-11-27T09:00:00+01:00","token":"2bddb04e64b3b7a5a779e18509926663acbdc3ef"},{"time":"2018-11-27T10:00:00+01:00","token":"d5110ba2583542c8bcd462c3763ee4c6e33ed6d9"},{"time":"2018-11-27T11:00:00+01:00","token":"069661aa8c13dff2b2b0ac172b7eefc74fc1d791"},{"time":"2018-11-28T09:00:00+01:00","token":"f2890fec720bb145a144aa2d85ee7ef0c8ad47e6"},{"time":"2018-11-28T10:00:00+01:00","token":"529fbc68166b8d941a3a8a6c57690b780d21b7b2"},{"time":"2018-11-28T11:00:00+01:00","token":"7c244c46eb15b09cebbe1fd37e417b9411e8c0ce"},{"time":"2018-11-29T09:00:00+01:00","token":"bb4f569d92ed8bbd15c888060557872ce99a6fb7"},{"time":"2018-11-29T10:00:00+01:00","token":"8060d960a521855e68173bfb29a840314daeaa3f"},{"time":"2018-11-29T11:00:00+01:00","token":"963da232e929a5906acd7b236c302968c61e50da"},{"time":"2018-11-29T15:00:00+01:00","token":"93e5ed7db78b794564780cc5f9f612694ca0bbba"},{"time":"2018-11-29T16:00:00+01:00","token":"71005b20c14caab6981061766910c55c4874b228"},{"time":"2018-11-29T17:00:00+01:00","token":"23d5148cb9ff856630dba4a7aaea07042ead11f5"},{"time":"2018-11-30T09:00:00+01:00","token":"5ba6266ff6eb65626c78f6f93ebe183170877938"},{"time":"2018-11-30T10:00:00+01:00","token":"34a837c0d505faebb1fcba8e2b06fba5035ac05b"},{"time":"2018-11-30T11:00:00+01:00","token":"e99b23cf0c805f87fbf390ef8b1d509e48569042"},{"time":"2018-12-03T09:00:00+01:00","token":"2a232dc2d7046c3632457e42adcdd9e47e7ab683"},{"time":"2018-12-03T10:00:00+01:00","token":"e7a006a991e1f4e87af27e99b805148d370677ad"},{"time":"2018-12-03T11:00:00+01:00","token":"44e3f539daaaf93bdd0c13c24180a582f1f52097"},{"time":"2018-12-03T15:00:00+01:00","token":"db0ee98c2fab2add976837bd683692eee60c7d1f"},{"time":"2018-12-03T16:00:00+01:00","token":"7e75daa8ae0649ef35ef8926f014888fb672f608"},{"time":"2018-12-03T17:00:00+01:00","token":"306abcc61bb39ecbbe2c7fc6a19a68b441fcb47e"},{"time":"2018-12-04T09:00:00+01:00","token":"416234daf3e90cd69f5dae6119dd82238e711ad4"},{"time":"2018-12-04T10:00:00+01:00","token":"70d008692418f04dce231021a4cfddb88a8c5e48"},{"time":"2018-12-04T11:00:00+01:00","token":"22b4f27af128338f5b7a989ea56cd225fefd047f"},{"time":"2018-12-06T09:00:00+01:00","token":"3f0087234e805f1aa3d1f8a6a130585d32dfd663"},{"time":"2018-12-06T10:00:00+01:00","token":"6002dd0a0d12c1003affdd4f2ae3e5597591ce67"},{"time":"2018-12-06T11:00:00+01:00","token":"ea80fdcae9df385a4c63bb979475d7a369459c42"},{"time":"2018-12-06T15:00:00+01:00","token":"ac8e627960a7a130efc0d1730743aa4f0c344c03"},{"time":"2018-12-06T16:00:00+01:00","token":"79986e5163c6bdd39611aba60b7edd58291c17ab"},{"time":"2018-12-06T17:00:00+01:00","token":"c03e3fef6df3462233fa16556840adbc6d7be996"},{"time":"2018-12-07T09:00:00+01:00","token":"4cb2c7175d0575c714638cd5d45242ede9fc268b"},{"time":"2018-12-07T10:00:00+01:00","token":"f3e68e510e32f3d5c0d998a6f5e8e4497f274166"},{"time":"2018-12-07T11:00:00+01:00","token":"2d64599badd2cdd9aca0e897b36ca57a064d57a7"}]}'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-10-08&to=2018-11-09
-  recorded_at: Fri, 26 Oct 2018 09:30:52 GMT
+      effective_url: https://patient.samedi.de/api/booking/v3/times?client_id=<CLIENT_ID>&event_category_id=50409&event_type_id=156481&from=2018-11-05&to=2018-12-07
+  recorded_at: Tue, 30 Oct 2018 11:32:26 GMT
 - request:
     method: post
     uri: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
     body:
       encoding: US-ASCII
-      string: event_category_id=50409&event_type_id=156481&starts_at=2018-10-26T11:35:00+02:00&token=e88f1c24d8a8851f3983f71b2620393bf8452802
+      string: event_category_id=50409&event_type_id=156481&starts_at=2018-11-05T09:05:00+01:00&token=742391306b9cb69a410b163bf6c25167c536cdde
     headers:
       User-Agent:
-      - Faraday v0.15.2
+      - Faraday v0.15.3
       Authorization:
       - Bearer <TEST_ACCESS_TOKEN>
       Expect:
@@ -72,7 +72,7 @@ http_interactions:
       Server:
       - nginx/1.15.3
       Date:
-      - Fri, 26 Oct 2018 09:30:53 GMT
+      - Tue, 30 Oct 2018 11:32:27 GMT
       Content-Type:
       - text/plain; charset=utf-8
       Transfer-Encoding:
@@ -86,23 +86,23 @@ http_interactions:
       Vary:
       - Origin
       ETag:
-      - W/"d18b7eee15941634ab4fb276d6820f58"
+      - W/"e50003f8594fef74ffcfa1aa19c7cfb7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       P3P:
       - CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
       X-Request-Id:
-      - f81fd4ee-a987-4316-b839-6c1e821ed6ae
+      - 2b718ae0-c8a7-42c5-9d9c-80c3a0f341f5
       X-Runtime:
-      - '0.882948'
+      - '1.586224'
       Strict-Transport-Security:
       - max-age=31536000
     body:
       encoding: UTF-8
-      string: '{"success":true,"data":{"id":39087685,"name":"Sprechstunde","external":true,"referral":false,"creator_type":"Patient::Patient","updater_type":null,"kind":"event","starts_at":"2018-10-26T11:35:00+02:00","attendant_id":"pf3e4160064","structured_comment":[],"xref":null,"attendant_state":null,"ends_at":"2018-10-26T11:55:00+02:00","color":"purple","name_external":"Sprechstunde","event_type_id":156481,"creator_id":"pf3e4160064","updater_id":null,"updated_at":null,"lsn":1540546252823,"base_updated_at":null,"event_category_id":50409,"event_type_xref":null,"attendant_xref":null,"duration":"00:20","practice_name":"Praxis
-        Zweig (DEMO)","practice_id":"00JDFP8A3KYME1FA","creator_name":null,"updater_name":null,"cancelable_until":"2018-10-26T11:35:00+02:00","editable":true,"course_id":null,"video_consultation":false,"course_participants":null}}'
+      string: '{"success":true,"data":{"id":39185508,"name":"Sprechstunde","external":true,"referral":false,"creator_type":"Patient::Patient","updater_type":null,"kind":"event","starts_at":"2018-11-05T09:05:00+01:00","attendant_id":"pf530aafb00","structured_comment":[],"xref":null,"attendant_state":null,"ends_at":"2018-11-05T09:25:00+01:00","color":"purple","name_external":"Sprechstunde","event_type_id":156481,"creator_id":"pf530aafb00","updater_id":null,"updated_at":null,"lsn":1540899146908,"base_updated_at":null,"event_category_id":50409,"event_type_xref":null,"attendant_xref":null,"duration":"00:20","practice_name":"Praxis
+        Zweig (DEMO)","practice_id":"00JDFP8A3KYME1FA","creator_name":null,"updater_name":null,"cancelable_until":"2018-11-05T09:05:00+01:00","editable":true,"course_id":null,"video_consultation":false,"course_participants":null}}'
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://patient.samedi.de/api/booking/v3/book?client_id=<CLIENT_ID>
-  recorded_at: Fri, 26 Oct 2018 09:30:53 GMT
+  recorded_at: Tue, 30 Oct 2018 11:32:27 GMT
 recorded_with: VCR 4.0.0
