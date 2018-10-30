@@ -50,7 +50,7 @@ RSpec.describe 'Booking flow' do
     click_on_first(class_name: 'calendar-item-link')
     expect(page).to have_content('Select a time')
 
-    click_on_first(class_name: 'timeslot-button')
+    click_on_last(class_name: 'timeslot-button')
     expect(page).to have_content('Confirm Your Booking')
     expect(page).not_to have_content('Neupatient')
     expect(page).not_to have_content('Vorerkrankungen')
