@@ -8,6 +8,10 @@ This application is a reference implementation of the [samedi Booking API](https
 
 This is a web application that allows a user to book an appointment for a given clinic.
 
+## Demo
+
+You can explore the demo of the app online: https://samedi-rails-booking-api.herokuapp.com
+
 ## Requirements
 
 The application is developed with Ruby 2.5.1.
@@ -17,7 +21,7 @@ The application is developed with Ruby 2.5.1.
 Clone this repository and run the setup script:
 
 ```
-$ cd samedi-rails-api-client
+$ cd rails-booking-api
 $ bin/setup
 ```
 
