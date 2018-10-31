@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/samedi/rails-booking-api.svg?branch=master)](https://travis-ci.com/samedi/rails-booking-api)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a6e420e01c5f81df5b1b/maintainability)](https://codeclimate.com/github/samedi/rails-booking-api/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a6e420e01c5f81df5b1b/test_coverage)](https://codeclimate.com/github/samedi/rails-booking-api/test_coverage)
 
 This application is a reference implementation of the [samedi Booking API](https://wiki.samedi.de/display/doc/Booking+API) client in Ruby.
 
