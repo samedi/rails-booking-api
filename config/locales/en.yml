@@ -22,6 +22,11 @@ en:
   time_label: Time
   option_yes: 'Yes'
   option_no: 'No'
+  landing:
+    show:
+      header: Enter an institution ID
+      institution: Institution ID
+      submit: List Categories
   event_categories:
     index:
       title: Select a category
@@ -62,10 +67,6 @@ en:
   sessions:
     show_access_token:
       your_access_token_is: 'Your access token is: %{access_token}'
-  manage:
-    keywords:
-      index:
-        title: Keywords
   errors:
     format: "%{message}"
   activemodel:

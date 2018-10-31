@@ -1,7 +1,7 @@
 %h1
-  Enter an institution ID
+  = t('.header')
 
 = form_tag event_categories_path, method: :get do
-  = label_tag :institution_id, 'Institution ID'
+  = label_tag :institution_id, t('.institution')
   = text_field_tag :institution_id
-  = submit_tag
+  = submit_tag t('.submit'), class: 'button'
