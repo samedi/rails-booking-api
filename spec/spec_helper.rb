@@ -12,7 +12,6 @@ if ENV['COVERAGE']
     add_group 'Decorators', 'app/decorators'
     add_group 'Entities', 'app/entities'
     add_group 'Forms', 'app/forms'
-    add_group 'Inputs', 'app/inputs'
     add_group 'Mappers', 'app/mappers'
     add_group 'Operations', 'app/operations'
     add_group 'View-models', 'app/view_models'
