@@ -75,9 +75,13 @@ RSpec.describe BookEvent do
           timeslot: next_timeslot
         )
       }.to(raise_error { |e|
-        e.is_a?(BookEvent::CommentFormValidationError) &&
-          e.errors == [{ 'Neupatient' => 'muss ausgefüllt werden' },
-                       { 'Vorerkrankungen' => 'muss ausgefüllt werden' }]
+        expect(e).to be_a(BookEvent::CommentFormValidationError)
+        expect(e.errors).to match(
+          [
+            { 'Neupatient' => 'muss ausgefüllt werden' },
+            { 'Vorerkrankungen' => 'muss ausgefüllt werden' }
+          ]
+        )
       })
     end
 
