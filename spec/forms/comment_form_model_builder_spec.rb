@@ -441,13 +441,25 @@ RSpec.describe CommentFormModelBuilder do
     end
 
     describe 'for checkbox' do
-      let(:field) {
-        CommentFormField.new(
-          name: 'Foo Bär', type: 'checkbox', required: false, config: CommentFormField::Configuration.new
-        )
-      }
+      context 'required' do
+        let(:field) {
+          CommentFormField.new(
+            name: 'Foo Bär', type: 'checkbox', required: true, config: CommentFormField::Configuration.new
+          )
+        }
 
-      it { is_expected.to match(as: :radio_buttons, collection: [['Yes', true], ['No', false]], label: 'Foo Bär', label_text: an_instance_of(Proc)) }
+        it { is_expected.to match(as: :radio_buttons, collection: [['Yes', true], ['No', false]], label: 'Foo Bär', label_text: an_instance_of(Proc), required: true) }
+      end
+
+      context 'not required' do
+        let(:field) {
+          CommentFormField.new(
+            name: 'Foo Bär', type: 'checkbox', required: false, config: CommentFormField::Configuration.new
+          )
+        }
+
+        it { is_expected.to match(as: :radio_buttons, collection: [['Yes', true], ['No', false]], label: 'Foo Bär', label_text: an_instance_of(Proc), required: false) }
+      end
     end
 
     describe 'for any other field' do

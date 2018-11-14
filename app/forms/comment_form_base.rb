@@ -16,11 +16,14 @@ class CommentFormBase
     'date' => { as: :date, html5: true }.freeze,
     'time' => { as: :time, html5: true }.freeze,
     'duration' => { as: :time, html5: true }.freeze,
-    'checkbox' => {
-      as: :radio_buttons,
-      collection: [[I18n.t(:option_yes), true].freeze, [I18n.t(:option_no), false].freeze].freeze
-    }.freeze,
-    'combo' => ->(config) { { as: config.multi? ? :check_boxes : :select, collection: config.values } }
+    'checkbox' => lambda do |_, required|
+      {
+        as: :radio_buttons,
+        collection: [[I18n.t(:option_yes), true].freeze, [I18n.t(:option_no), false].freeze].freeze,
+        required: required
+      }
+    end,
+    'combo' => ->(config, _) { { as: config.multi? ? :check_boxes : :select, collection: config.values } }
   }.freeze
 
   def self.model_name
@@ -74,13 +77,13 @@ class CommentFormBase
       label: comment_field.name,
       label_text: LABEL_TEXT_LAMBDA
     }.merge(
-      type_specific_field_options(comment_field.type, comment_field.config)
+      type_specific_field_options(comment_field.type, comment_field.config, comment_field.required?)
     )
   end
 
   private
 
-  def type_specific_field_options(type, config)
+  def type_specific_field_options(type, config, required)
     options = TYPE_SPECIFIC_FIELD_OPTIONS.fetch(type) {
       fallback_options = { as: :string }
       fallback_options[:placeholder] = config.empty_text if config.empty_text.present?
@@ -88,7 +91,7 @@ class CommentFormBase
     }
 
     if options.respond_to?(:call)
-      options.call(config)
+      options.call(config, required)
     else
       options
     end
