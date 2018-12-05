@@ -16,7 +16,7 @@ gem 'rails', '~> 5.2.1'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Authentication
-gem 'omniauth', '~> 1.8.0'
+gem 'omniauth-samedi'
 
 # Views and front-end
 gem 'haml-rails', '~> 1.0'

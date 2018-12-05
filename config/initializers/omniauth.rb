@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require Rails.root.join('lib', 'omniauth', 'strategies', 'samedi')
-
 OmniAuth.config.logger = Rails.logger
 
 Rails.application.config.middleware.use OmniAuth::Builder do

@@ -3,7 +3,7 @@
 # Provides actions for authenticating patients.
 class SessionsController < ApplicationController
   def create
-    authorize_patient(auth_hash.credentials.access_token)
+    authorize_patient(auth_hash.credentials.token)
     redirect_to request.env['omniauth.origin'] || root_url
   end
 

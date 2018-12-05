@@ -7,7 +7,7 @@ RSpec.describe 'Booking flow' do
     OmniAuth.config.test_mode = true
 
     OmniAuth.config.mock_auth[:samedi] = OmniAuth::AuthHash.new(
-      credentials: { access_token: ENV['TEST_ACCESS_TOKEN'] }
+      credentials: { token: ENV['TEST_ACCESS_TOKEN'] }
     )
   end
 
