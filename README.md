@@ -32,9 +32,9 @@ Register your own [samedi API Credentials](https://patient.samedi.de/api/signup)
 This app is a front-end for Samedi Bookking API.
 Therefore, unlike a typical Rails app, this one doesn't use a database at all.
 
-Typical the data flow goes like this:
+Typical data flow goes like this:
 
-* User agent sends a request to the Rails app
+* A user agent sends a request to the Rails app
 * An appropriate controller handles the request
 * If necessary, the controller builds a form object to validate and filter the request data (params)
 * The controller builds an operation object that will process the request and invokes it with validated params
